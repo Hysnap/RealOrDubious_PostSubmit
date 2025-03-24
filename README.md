@@ -132,7 +132,7 @@ The **Streamlit dashboard** provides multiple **interactive pages**:
 
 ```sh
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run Real_Or_Dubious_News.py
 ```
 
 ### **2️⃣ Cloud Deployment (Streamlit)**

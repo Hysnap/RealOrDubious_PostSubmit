@@ -18,7 +18,8 @@ sns.set_style("whitegrid")
 
 
 def preprocess_data(source_df, low_cardinality=None, skewed_numeric=None,
-                     numeric=None, high_cardinality=None, target=None):
+                     numeric=None, high_cardinality=None, target=None
+                     , run_name="NotSet"):
     """Preprocesses the data by encoding categorical features and scaling numeric features."""
     transformers = []
 
