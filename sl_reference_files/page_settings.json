@@ -28,7 +28,7 @@
         },
         "Lower_left": {
           "type": "markdown",
-          "content": "The following datasets were intially discovered through a Google search: \n\n[Debunk Disinformation analysis center](https://www.debunk.org/?gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXs1x7Q9xNloMlUT7hUFllO27GXSkWOvoQ5uIPB62zLv3Akwvy3XdiBoCvZEQAvD_BwE)\n\n[webz.io Fake News data Repository](https://github.com/Webhose/fake-news-dataset.)\n\n[UNESCO: Data sources](https://core.unesco.org/en/home)\n\nOr one of the Kaggle datasets such as:. \n\n[BBC Articles Dataset](https://www.kaggle.com/datasets/jacopoferretti/bbc-articles-dataset) \n\n[Fake News Classification Dataset](https://www.kaggle.com/datasets/aadyasingh55/fake-news-classification) \n\n[Fake or Real News Dataset](https://www.kaggle.com/datasets/nitishjolly/news-detection-fake-or-real-dataset) \n\n[AI vs Human Text Dataset](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text) \n\n[Fake News Detection (2015-2017)](https://www.kaggle.com/datasets/bhavikjikadara/fake-news-detection) \n\n[Fake News Dataset](https://www.kaggle.com/datasets/algord/fake-news) \n\n[PolitiFact Fact-Check Dataset](https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset) \n\n[Misinformation & Fake News Text Dataset (79K)](https://www.kaggle.com/datasets/stevenpeutz/misinformation-fake-news-text-dataset-79k) \n\n[Non-English Fake News Dataset](https://www.kaggle.com/datasets/cryptexcode/banfakenews) \n\n[Fake/Real News Dataset (2013-2020)](https://www.kaggle.com/datasets/techykajal/fakereal-news) \n\n[Fake News Dataset Around the Syrian War (2014-2018)](https://www.kaggle.com/datasets/mohamadalhasan/a-fake-news-dataset-around-the-syrian-war)"
+          "content": "The following datasets were initially discovered through a Google search: \n\n- **[Debunk Disinformation Analysis Center](https://www.debunk.org/?gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXs1x7Q9xNloMlUT7hUFllO27GXSkWOvoQ5uIPB62zLv3Akwvy3XdiBoCvZEQAvD_BwE)**\n- **[webz.io Fake News Data Repository](https://github.com/Webhose/fake-news-dataset)**\n- **[UNESCO: Data Sources](https://core.unesco.org/en/home)**\n\nOr one of the Kaggle datasets such as: \n\n- **[BBC Articles Dataset](https://www.kaggle.com/datasets/jacopoferretti/bbc-articles-dataset)**\n- **[Fake News Classification Dataset](https://www.kaggle.com/datasets/aadyasingh55/fake-news-classification)**\n- **[Fake or Real News Dataset](https://www.kaggle.com/datasets/nitishjolly/news-detection-fake-or-real-dataset)**\n- **[AI vs Human Text Dataset](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text)**\n- **[Fake News Detection (2015-2017)](https://www.kaggle.com/datasets/bhavikjikadara/fake-news-detection)**\n- **[Fake News Dataset](https://www.kaggle.com/datasets/algord/fake-news)**\n- **[PolitiFact Fact-Check Dataset](https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset)**\n- **[Misinformation & Fake News Text Dataset (79K)](https://www.kaggle.com/datasets/stevenpeutz/misinformation-fake-news-text-dataset-79k)**\n- **[Non-English Fake News Dataset](https://www.kaggle.com/datasets/cryptexcode/banfakenews)**\n- **[Fake/Real News Dataset (2013-2020)](https://www.kaggle.com/datasets/techykajal/fakereal-news)**\n- **[Fake News Dataset Around the Syrian War (2014-2018)](https://www.kaggle.com/datasets/mohamadalhasan/a-fake-news-dataset-around-the-syrian-war)**"
         },
         "Upper_right": {
           "type": "sub header",
@@ -69,23 +69,23 @@
         },
         "Upper": {
           "type": "markdown",
-          "content": "Following analysis of the available data the following aims and requirements were agreed for the initial release of the dashboard. "
+          "content": "### Dashboard Aims and Requirements\n\nFollowing analysis of the available data, the following aims and requirements were agreed for the initial release of the dashboard:\n\n1. **Objective**:\n   - To produce a dashboard that presents a Machine Learning (ML) model capable of analyzing a news article and providing a classification of **Real** or **Dubious**.\n\n2. **Features**:\n   - The dashboard will include visualizations to help users better understand the differences between **Real** and **Dubious** news.\n\n3. **Technology**:\n   - The dashboard will be built using **Python** and implemented as a **Streamlit application**.\n\n4. **Analysis Tools**:\n   - TextBlob sentiment analysis algorithms will be used for data analysis.\n\n5. **Dataset**:\n   - The **Fake News Detection (2015-2017)** dataset from Kaggle will be utilized.\n\n6. **Timeline**:\n   - The dashboard will be developed as a **4-day prototype**.\n\n7. **Future Goals**:\n   - It is anticipated that the next generation of the dashboard will address more user requests and potentially integrate **fact-checking APIs**."
         },
         "Visualizations": {
           "type": "markdown",
-          "content": "empty"
+          "content": "### Analysis Summary\n\nThe analysis of the words used by **Real** and **Dubious** news stories revealed the following insights:\n\n1. **Sentiment Analysis**:\n   - The use of **TextBlob sentiment analysis algorithms** showed differences in the sentiment of titles and articles.\n   - **Polarity and Subjectivity** analysis indicated:\n     - Titles were generally more **positive** and **less subjective** than articles, regardless of their truthfulness.\n     - Titles had a **higher median score** for both polarity and subjectivity.\n     - Articles exhibited a **wider range of scores** and more outliers.\n\n2. **Data Bias**:\n   - The data was **biased**, with **Real** and **Dubious** news articles being classified differently.\n   - Only **Real articles** had identified sources.\n   - The **category** field was also biased, with **Real news stories** being less extreme in polarity and less subjective than **Dubious news stories**.\n\n3. **Character Count Analysis**:\n   - **Real news articles** had a **lower character length** in both titles and articles compared to **Dubious news articles**.\n   - The further the character count deviated from this, the greater the chance the article was **not real**.\n\n4. **Content Indicators**:\n   - Articles that mention **videos or pictures**, especially in the title, were more likely to be **Dubious news**.\n   - Articles referencing **key social media outlets** were more likely to be **Real**.\n\n---\n\n### Conclusion\n\nA dashboard has been successfully built that can provide a **Real or Dubious classification** based on the **sentiment of the title and article** for any submitted article."
         }
       }
     }
   },
   "Data Exploration": {
     "required_elements": {
-      "Dashboard": "sl_visualisations.visualisations.plot_article_vs_title_polarity",
-      "vis1": "sl_visualisations.visualisations.plot_article_count_by_subject",
-      "vis2": "sl_visualisations.visualisations.plot_article_count_by_source",
-      "vis3": "sl_visualisations.visualisations.plot_article_vs_title_characters",
-      "vis4": "sl_visualisations.visualisations.plot_article_count_by_media",
-      "vis5": "sl_visualisations.visualisations.plot_hex_charcounts"
+      "Dashboard": "sl_visualisations.polarity_refactor.plot_article_vs_title_polarity",
+      "vis1": "sl_visualisations.article_count_refactor.plot_article_count_by_subject",
+      "vis2": "sl_visualisations.article_count_refactor.plot_article_count_by_source",
+      "vis3": "sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters",
+      "vis4": "sl_visualisations.article_count_refactor.plot_article_count_by_media",
+      "vis5": "sl_visualisations.other_visuals_refactor.plot_hex_charcounts"
     },
     "page_settings": {
       "title": "Data Exploration",
@@ -109,7 +109,7 @@
         },
         "Upper_left": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_count_by_source"
+          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_source"
         },
         "Lower_right": {
           "type": "text",
@@ -117,7 +117,7 @@
         },
         "Upper_right": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_count_by_subject"
+          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_subject"
         }
       },
       "tab2": {
@@ -131,7 +131,7 @@
         },
         "Upper_left": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_vs_title_characters"
+          "content": "sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters"
         },
         "Lower_left": {
           "type": "text",
@@ -139,7 +139,7 @@
         },
         "Upper_right": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_count_by_media"
+          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_media"
         },
         "Lower_right": {
           "type": "text",
@@ -157,28 +157,28 @@
         },
         "Visualizations": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_hex_charcounts"
+          "content": "sl_visualisations.other_visuals_refactor.plot_hex_charcounts"
         }
       }
     }
   },
   "Data Preprocessing": {
     "required_elements": {
-      "T1C1Vis": "sl_visualisations.visualisations.plot_article_vs_title_polarity",
-      "T1C2Vis": "sl_visualisations.visualisations.plot_article_vs_title_subjectivity",
-      "T2C1V1": "sl_visualisations.visualisations.plot_title_subjectivity_vs_polarity",
-      "T2C1V2": "sl_visualisations.visualisations.plot_article_subjectivity_vs_polarity",
-      "T2C2V1": "sl_visualisations.visualisations.plot_polarity_contrad_variations",
-      "T2C2V2": "sl_visualisations.visualisations.plot_subjectivity_contrad_variations",
-      "T3C1V1": "sl_visualisations.visualisations.plot_polarity_subjectivity_boxplots"
+      "T1C1V1": "sl_visualisations.polarity_refactor.plot_article_vs_title_polarity",
+      "T1C2V1": "sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity",
+      "T2C1V1": "sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity",
+      "T2C1V2": "sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity",
+      "T2C2V1": "sl_visualisations.polarity_refactor.plot_polarity_contrad_variations",
+      "T2C2V2": "sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations",
+      "T3C1V1": "sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots"
     },
     "page_settings": {
       "title": "Data PreProcessing",
       "description": "Data manipulations post ETL and pre modelling.",
       "icon": "Icon",
       "color": "Color",
-      "filter_key": "postETL",
-      "target_label": "PostETL",
+      "filter_key": "DataPreProcessing",
+      "target_label": "DataPreProcessing",
       "data": "Data_Clean"
     },
     "tab_contents": {
@@ -197,7 +197,7 @@
         },
         "Lower_left": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_vs_title_polarity"
+          "content": "sl_visualisations.polarity_refactor.plot_article_vs_title_polarity"
         },
         "Upper_right": {
           "type": "text",
@@ -205,7 +205,7 @@
         },
         "Lower_right": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_vs_title_subjectivity"
+          "content": "sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity"
         }
       },
       "tab2": {
@@ -219,19 +219,19 @@
         },
         "Upper_left": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_title_subjectivity_vs_polarity"
+          "content": "sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity"
         },
         "Lower_left": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_subjectivity_vs_polarity"
+          "content": "sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity"
         },
         "Lower_right": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_polarity_contrad_variations"
+          "content": "sl_visualisations.polarity_refactor.plot_polarity_contrad_variations"
         },
         "Upper_right": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_subjectivity_contrad_variations"
+          "content": "sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations"
         }
       },
       "tab3": {
@@ -245,24 +245,24 @@
         },
         "Visualizations": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_polarity_subjectivity_boxplots"
+          "content": "sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots"
         }
       }
     }
   },
-  "Data Date Analysis": {
+  "Word Data Analysis": {
     "required_elements": {
-      "T1C1Vis": "sl_visualisations.visualisations.plot_article_count_by_day_label",
-      "T1C2Vis": "sl_visualisations.visualisations.plot_article_count_by_day",
-      "T2C1V1": "sl_visualisations.visualisations.plot_article_count_by_location"
+      "T1C1V1": "sl_visualisations.article_count_refactor.plot_article_count_by_day_label",
+      "T1C2V1": "sl_visualisations.article_count_refactor.plot_article_count_by_day",
+      "T2C1V1": "sl_visualisations.article_count_refactor.plot_article_count_by_location"
     },
     "page_settings": {
-      "title": "Data PreProcessing",
-      "description": "Data manipulations post ETL and pre modelling.",
+      "title": "Word and Phrase Analysis",
+      "description": "Word and Phrase Analysis.",
       "icon": "Icon",
       "color": "Color",
-      "filter_key": "postETL",
-      "target_label": "PostETL",
+      "filter_key": "word_data_analysis",
+      "target_label": "word_data_analysis",
       "data": "Data_Clean"
     },
     "tab_contents": {
@@ -272,106 +272,117 @@
           "content": "Analysis by Date and Day"
         },
         "Upper": {
-          "type": "text",
-          "content": "There are some visible trends when we look at the number of Dubious and Real articles by day.  Here I have created a label that identifies 'special' days or just allocates the day of the week."
+          "type": "markdown",
+          "content": "### Trends in Article Counts by Day\n\nThere are some visible trends when we look at the number of **Dubious** and **Real** articles by day. Below, I have created a label that identifies 'special' days or simply allocates the day of the week.\n\n---\n\n### Locations Mentioned in Articles\n\nThe number of different locations mentioned in articles is also analyzed. It is clear that the **USA** is mentioned more than any other location.\n\n---\n\n### Articles by Day of the Week\n\nBelow, we see the number of articles by day of the week or special date. It is evident that there are more articles on **Monday** and **Tuesday** than any other day. This is likely due to the weekend news cycle."
         },
         "Upper_left": {
-          "type": "text",
-          "content": "Below we see the number of articles by day of the week, or special date.  It is clear that there are more articles on a Monday and Tuesday than any other day.  This is likely due to the weekend news cycle."
+          "type": "image",
+          "content": "wordclouds//wordcloud_all.png"
         },
         "Lower_left": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_count_by_day_label"
+          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_day_label"
         },
         "Upper_right": {
-          "type": "text",
-          "content": "Below we see the number of different locations mentioned in articles.  It is clear that the USA is mentioned more than any other location."
+          "type": "visualization",
+          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_day"
         },
         "Lower_right": {
           "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_count_by_location"
+          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_location"
         }
       },
       "tab2": {
         "Header": {
           "type": "sub header",
-          "content": ""
+          "content": "Analysis of Words in Articles"
         },
         "Upper": {
-          "type": "text",
-          "content": ""
+          "type": "markdown",
+          "content": "### Word Clouds Analysis\n\nBelow are some word clouds showing the most common words in **Real** and **Dubious** articles. These word clouds are created to only include words unique to each type of article.\n\n---\n\n#### Common Words in Real and Dubious Articles\n\nBelow the unique word clouds, you will find a word cloud displaying the most common words that appear in both **Real** and **Dubious** articles. Top left is the words in all articles analysed, top right is the words in Real articles, bottom left is the words in Dubious articles and bottom right is the words only found in dubious articles."
         },
         "Upper_left": {
-          "type": "visualization",
-          "content": ""
+          "type": "image",
+          "content": "wordclouds//wordcloud_common.png"
         },
         "Lower_left": {
-          "type": "visualization",
-          "content": ""
+          "type": "image",
+          "content": "wordclouds//wordcloud_false.png"
         },
         "Lower_right": {
-          "type": "visualization",
-          "content": ""
+          "type": "image",
+          "content": "wordclouds//wordcloud_true.png"
         },
         "Upper_right": {
-          "type": "visualization",
-          "content": ""
+          "type": "image",
+          "content": "wordclouds//wordcloud_fake.png"
         }
       },
       "tab3": {
         "Header": {
           "type": "header",
-          "content": "Count and Comparison of Articles by Day"
+          "content": "Analysis of common phrases in articles"
         },
         "Upper": {
-          "type": "text",
-          "content": "The visualisation below looks at the split of Real and Dubious news articles by date, there appears to be an increase in the volume of true articles in the dataset over time, this is potentially an issue of the data collection process rather than a historically true fact and would require further investigation."
+          "type": "markdown",
+          "content": "The visualisation below looks at common phrases in articles."
         },
         "Visualizations": {
-          "type": "visualization",
-          "content": "sl_visualisations.visualisations.plot_article_count_by_day"
+          "type": "image",
+          "content": "wordclouds//wordcloud_common.png"
         }
       }
-    }
-  },
-  "Machine Learning": {
-    "required_elements": {
-      "ROD_Dashboard": "sl_visualisations.map_visualisation.display_maps"
     },
-    "page_settings": {
-      "title": "Machine Learning Modelling",
-      "description": "Information on Machine Learning Modelling",
-      "icon": "Icon",
-      "color": "Color",
-      "filter_key": "Filter Key",
-      "target_label": "Target Label",
-      "data": "Data"
-    },
-    "tab_contents": {
-      "tab1": {
-        "Header": { "type": "header", "content": "content" },
-        "Upper": { "type": "header", "content": "content" },
-        "Upper_left": { "type": "header", "content": "content" },
-        "Lower_left": { "type": "header", "content": "content" }
+    "Machine Learning": {
+      "required_elements": {
+        "ROD_Dashboard": "sl_visualisations.map_visualisation.display_maps"
       },
-      "tab2": {
-        "Header": { "type": "header", "content": "content" },
-        "Upper": { "type": "header", "content": "content" },
-        "Upper_left": { "type": "header", "content": "content" },
-        "Lower_left": { "type": "header", "content": "content" }
+      "page_settings": {
+        "title": "Machine Learning Modelling",
+        "description": "Information on Machine Learning Modelling",
+        "icon": "Icon",
+        "color": "Color",
+        "filter_key": "Filter Key",
+        "target_label": "Target Label",
+        "data": "Data"
       },
-      "tab3": {
-        "Header": {
-          "type": "header",
-          "content": ""
+      "tab_contents": {
+        "tab1": {
+          "Header": {
+            "type": "sub header",
+            "content": "Model to classify if an article is Real or Dubious"
+          },
+          "Upper": {
+            "type": "markdown",
+            "content": "Several models were made and assessed including Linear Regression and Random Forest, before settling on the deployed one."
+          },
+          "Upper_left": {
+            "type": "markdown",
+            "content": "### Model Performance\n\nThe original models only achieved **50-60% accuracy**, so alternatives were explored. The final model achieves an impressive **93-94% accuracy** on analysis.\n\n#### Key Observations:\n- There is still a degree of **False Positives** and **False Negatives**.\n- **False Positives**: These represent **badly written Real news**.\n- **False Negatives**: These represent **well-constructed Dubious news**.\n\nWhile the model performs well, further refinements are needed to reduce these errors and improve reliability."
+          },
+          "Lower_left": { "type": "header", "content": "content" },
+          "Upper_right": { "type": "header", "content": "content" },
+          "Lower_right": { "type": "header", "content": "content" }
         },
-        "Upper": {
-          "type": "text",
-          "content": ""
+        "tab2": {
+          "Header": { "type": "header", "content": "content" },
+          "Upper": { "type": "header", "content": "content" },
+          "Upper_left": { "type": "header", "content": "content" },
+          "Lower_left": { "type": "header", "content": "content" }
         },
-        "Visualizations": {
-          "type": "visualization",
-          "content": ""
+        "tab3": {
+          "Header": {
+            "type": "header",
+            "content": ""
+          },
+          "Upper": {
+            "type": "text",
+            "content": ""
+          },
+          "Visualizations": {
+            "type": "visualization",
+            "content": ""
+          }
         }
       }
     }

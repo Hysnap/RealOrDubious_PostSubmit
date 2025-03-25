@@ -17,8 +17,7 @@ try:
     import setup
     import ROD_menu
     from sl_utils.logger import streamlit_logger as logger
-    from f_dashboard.data_prep import dashboarddata
-    from f_dashboard.data_prep import mapdata
+    from f_dashboard.data_prep import dashboarddata, mapdata, wordcountdata
 except ImportError as e:
     raise SystemExit(f"Error: Failed to import modules - {e}")
 
@@ -53,10 +52,15 @@ try:
         @st.cache_data
         def load_dashboard_data():
             return dashboarddata()
-        
+
+        st.cache_data()
+        def load_wordcount_data():
+            return wordcountdata()
         # Store data in session state
         st.session_state['data_for_map'] = load_mapdata()
         st.session_state['data_clean'] = load_dashboard_data()
+        st.session_state['wordcount_data'] = load_wordcount_data()
+
 except Exception as e:
     logger.critical(f"First load crashed: {e}", exc_info=True)
     st.error(f"Data loading failed. Please check logs. {e}")

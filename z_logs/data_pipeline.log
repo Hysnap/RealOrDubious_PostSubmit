@@ -14985,3 +14985,33 @@ Traceback (most recent call last):
   File "H:\python310\lib\zipfile.py", line 1251, in __init__
     self.fp = io.open(file, filemode)
 FileNotFoundError: [Errno 2] No such file or directory: 'data//combined_data.zip'
+2025/03/24 11:46 ERROR:Error in wordcountdata: [Errno 2] No such file or directory: 'sl_data_for_dashboard//preprocessed_wordcount.zip'
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\f_dashboard\data_prep.py", line 201, in wordcountdata
+    df = pd.read_csv(
+         ^^^^^^^^^^^^
+  File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\pandas\io\common.py", line 784, in get_handle
+    handle = _BytesZipFile(
+             ^^^^^^^^^^^^^^
+  File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\pandas\io\common.py", line 1027, in __init__
+    self.buffer: zipfile.ZipFile = zipfile.ZipFile(  # type: ignore[assignment]
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pgold\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1323, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'sl_data_for_dashboard//preprocessed_wordcount.zip'

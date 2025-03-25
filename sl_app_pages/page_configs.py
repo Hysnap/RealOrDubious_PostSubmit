@@ -90,6 +90,14 @@ def execute_element_call(element_settings, imported_objects):
             logger.error(f"Execution error for visualization `{content}`: {e}")
             if st.session_state.get("debug_mode", False):
                 st.error(f"❌ Failed to execute `{content}`: {e}")
+    elif element_type == "image":
+        try:
+            st.image(content, use_container_width=True)
+            logger.info(f"Displayed image: {content}")
+        except FileNotFoundError:
+            logger.error(f"File `{content}` not found.")
+            if st.session_state.get("debug_mode", False):
+                st.error(f"❌ File `{content}` not found.")
 
 @log_function_call(logger)
 def execute_visualization(content):

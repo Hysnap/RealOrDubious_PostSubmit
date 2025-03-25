@@ -1,15 +1,16 @@
-# import time
-# import csv
-# from geopy.exc import GeocoderTimedOut
-# from google.cloud import api_keys_v2
-# from google.cloud.api_keys_v2 import Key
-# import io
-# from textblob import TextBlob
-# from nltk.corpus import stopwords
-# from nltk.stem import WordNetLemmatizer
-# import ast
-# import numpy as np
-# import holidays
+# Description: This script loads the data from the csv files, cleans the data,
+# extracts the location, source, and removes the text, performs sentiment analysis,
+# calculates contradictions and variations, categorizes sentiments, appends NLP locations
+# to text, extracts locations from articles, and saves the combined data to a csv file.
+# The script also extracts the location, source, and removes the text, splits the locationsfromarticle
+# into a separate dataframe, summarizes the locationsfromarticle data by article_id and location,
+# creates a dataframe of unique locations, and filters out locations marked to ignore.
+# The script also extracts latitude, longitude, and address, extracts continent, country, and state,
+# searches for a location in multiple columns of worldcities_df, and saves the common themes data to a csv file.
+# The script also generates a list of common themes, creates a dataframe of common themes, and saves the common themes data to a csv file.
+# The script also drops unnecessary columns, drops rows with empty cleaned_text, and exports the data to a csv file.
+# The script also sets month, day, and year for null values based off date_clean, and exports the data to a csv file.
+# The script also drops unnecessary columns, and exports the data to a csv file.
 
 import pandas as pd
 import re

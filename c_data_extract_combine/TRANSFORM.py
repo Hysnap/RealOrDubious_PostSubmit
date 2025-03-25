@@ -1,3 +1,21 @@
+    """
+    description: This script contains the data cleaning and feature extraction
+    functions for the combined data. The functions in this script are used to
+    classify the media type of the title and article text, extract date
+    information from the date column, and create date features for use in
+    future models. The script also removes rows where the title or text is
+    identical, empty, or whitespace, and drops unnecessary columns from the
+    combined dataframe. The cleaned and transformed data is then saved to a zip
+    file for further processing.
+
+    Functions:
+    - classify_and_combine: This function adds label flags to the true and fake
+    dataframes, concatenates the true, fake, and test dataframes, and classifies
+    the media type of the title and article text. The function also extracts date
+    information from the date column, creates date features for use in future
+    models, and saves the cleaned and transformed data to a zip file.  
+    """
+
 import pandas as pd
 import numpy as np
 import holidays

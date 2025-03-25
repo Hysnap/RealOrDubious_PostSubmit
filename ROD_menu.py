@@ -27,12 +27,12 @@ def pagesetup():
 
     app.add_page("Introduction", introduction_body)
     app.add_page("Objective and Requirements", mp1_intro)
-    app.add_page("Data Exploration", mp2_dataex)
-    app.add_page("Data Preprocessing", mp3_datapre)
-    app.add_page("Data Further Analysis", mp4_datapre)
-    app.add_page("Machine Learning", machinelearning)
-    app.add_page("Interactive Map", interactive_map)
-    app.add_page("Notes on Data and Manipulations", notesondataprep_body)
+    app.add_page("Articles by Character Counts\n and initial Classifications", mp2_dataex)
+    app.add_page("Sentiment Analysis", mp3_datapre)
+    app.add_page("Review of Shared\n Words and Phrases", mp4_datapre)
+    app.add_page("Real or Dubious Article Checker", machinelearning)
+    app.add_page("Map of Analysed Articles", interactive_map)
+    app.add_page("Notes on Data\n and Manipulations", notesondataprep_body)
     app.add_page("Login", loginpage)
     app.add_page("Logout", logoutpage)
 

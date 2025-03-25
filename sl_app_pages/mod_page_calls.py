@@ -5,7 +5,7 @@ from sl_utils.logger import log_function_call  # Import decorator
 from sl_app_pages.modular_page import display_page
 from sl_app_pages.datacleanliness import visualize_data_cleanliness
 from sl_visualisations.map_visualisation import display_maps
-# from sl_app_pages.ML_page import load_model
+from sl_app_pages.ML_page import run as load_model
 
 
 # login
@@ -67,7 +67,7 @@ def mp3_datapre():
 
 @log_function_call(logger)
 def mp4_datapre():
-    display_page("Data Date Analysis")
+    display_page("Word Data Analysis")
 
 
 @log_function_call(logger)
@@ -95,7 +95,7 @@ def dcl_combinedcsv():
 
 @log_function_call(logger)
 def machinelearning():
-    # load_model()
+    load_model()
     return
 
 # End of mod_page_calls.py
