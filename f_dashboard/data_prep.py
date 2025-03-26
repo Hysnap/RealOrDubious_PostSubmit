@@ -1,8 +1,12 @@
-    """
-    This module contains functions that load and process data for the dashboard.
-    The data is loaded from the data folder and processed to generate the required dataframes.
-    The processed dataframes are then saved to the data folder for use in the dashboard.
-    The functions in this module are used to load and process the data for the dashboard.
+"""
+Description: This module contains functions that load
+and process data for the dashboard.
+    The data is loaded from the data folder and processed
+    to generate the required dataframes.
+    The processed dataframes are then saved to the data
+    folder for use in the dashboard.
+    The functions in this module are used to load and process
+    the data for the dashboard.
     The processed data is saved to the data folder for use in the dashboard.
 
     Functions:
@@ -114,7 +118,9 @@ def mapdata():
         logger.debug(locationsmerged.info())
 
         # merge locationsmerged with df only keep rows with a match
-        locationgraphdf = df.merge(locationsmerged, on='article_id', how='left')
+        locationgraphdf = df.merge(locationsmerged,
+                                   on='article_id',
+                                   how='left')
         logger.debug(locationgraphdf.info())
         logger.debug(locationgraphdf.head())
 
@@ -140,8 +146,11 @@ def mapdata():
             'subcontinent']).size().reset_index(name='real_count')
 
         # merge fake and real articles dataframes
-        articles = pd.merge(fakearticles, realarticles, on=['year', 'month', 'day',
-                                                            'date', 'state',
+        articles = pd.merge(fakearticles, realarticles, on=['year',
+                                                            'month',
+                                                            'day',
+                                                            'date',
+                                                            'state',
                                                             'country',
                                                             'continent',
                                                             'subcontinent'],
@@ -200,7 +209,7 @@ def dashboarddata():
                         'sentiment_overall': str,
                         'unique_location_count': int
                      },
-        compression='zip',
+                     compression='zip',
                      # Ensure date_clean is imported as a date
                      parse_dates=['date_clean']
                      )
