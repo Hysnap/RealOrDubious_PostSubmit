@@ -10,7 +10,8 @@ import sys
 st.set_page_config(page_title="Real or Dubious News",
                    layout="wide")
 
-sys.path.append(os.path.abspath(os.getcwd())) 
+project_root = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(project_root)
 
 # import local modules
 try:
