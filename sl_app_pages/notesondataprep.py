@@ -4,12 +4,9 @@ from sl_utils.logger import log_function_call, streamlit_logger as logger
 
 @log_function_call(logger)
 def notesondataprep_body():
-    
-    Kaggle = "https://www.kaggle.com/"
-
-    datalink = "https://www.kaggle.com/robertjacobson/uk-political-donations"
-
-    tab1, tab2, tab3 = st.tabs("Source Data", "Data Cleansing and Assumptions", "Word and Phrase Analysis")
+    tab1, tab2, tab3 = st.tabs("Source Data",
+                               "Data Cleansing and Assumptions",
+                               "Word and Phrase Analysis")
     # use markdown to create headers and sub headers
     with tab1:
         col1, col2 = st.columns(2)
@@ -17,7 +14,7 @@ def notesondataprep_body():
             st.write("---")
             st.subheader("Notes on Data Source")
             st.write("---")
-            st.markdown(''' 
+            st.markdown('''
             The data was sourced from [Kaggle](https://www.kaggle.com/),
             The following datasets were considered:
             #### Fake News Datasets from Kaggle
@@ -147,7 +144,7 @@ def notesondataprep_body():
             ''')
         st.write("### The final dataset used was")
         st.markdown('''
-            Following a top line review of the available datasets - it has been decided to start with - 
+            Following a top line review of the available datasets - it has been decided to start with -
 
             ## [Fake News Detection (2015-2017)](https://www.kaggle.com/datasets/bhavikjikadara/fake-news-detection)
             ### **Files and Structure**
@@ -157,7 +154,7 @@ def notesondataprep_body():
             - `text` (description of news, including source)
             - `subject` (type of news)
             - `date`
-                
+
             As it contains a date and a sizeable dataset.
 
             This was later enhanced with the following dataset - after several issues of Bias were identified in the original dataset.
@@ -196,7 +193,7 @@ def notesondataprep_body():
                 - Append NLP-extracted locations to text.
                 - Extract locations from articles and split them into a separate dataframe.
                 - Summarize location data by `article_id` and `location`.
-                - Create a dataframe of unique locations and filter out ignored locations. """
+                - Create a dataframe of unique locations and filter out ignored locations. """)
         with col2:
             st.write("---")
             st.markdown("""
@@ -234,7 +231,6 @@ def notesondataprep_body():
             - Enables further analysis with out the need to reprocess the text data.
 
         """)
-
 
 # End of script
 # PATH: sl_app_pages/notesondataprep.py
