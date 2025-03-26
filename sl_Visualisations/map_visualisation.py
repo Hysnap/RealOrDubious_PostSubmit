@@ -12,15 +12,17 @@ def display_maps():
         # try to get data from session state
         articles = st.session_state.data_for_map
         if articles is None:
-            articles = pd.read_csv("data/articlesformap.csv",
-                                    dtype={"country": str,
-                                            "continent": str,
-                                            "subcontinent": str,
-                                            "year": int,
-                                            "month": int,
-                                            "day": int,
-                                            "fake_count": int,
-                                            "real_count": int}, parse_dates=["date"])
+            articles = pd.read_csv(
+                "data/articlesformap.csv",
+                dtype={"country": str,
+                       "continent": str,
+                       "subcontinent": str,
+                       "year": int,
+                       "month": int,
+                       "day": int,
+                       "fake_count": int,
+                       "real_count": int},
+                parse_dates=["date"])
     if articles is None or articles.empty:
         st.error("Failed to load data. Check ETL process.")
         streamlit_logger.error("Failed to load data. Check ETL process.")
@@ -43,7 +45,7 @@ def display_maps():
     # Get min/max dates
     min_date, max_date = articles["date"].min(), articles["date"].max()
 
-    col1, col2 = st.columns([0.20, 0.80], vertical_alignment="center")
+    col1, col2 = st.columns([0.20, 0.80])
 
     with col1:
         # **Date Range Slider**
@@ -65,7 +67,7 @@ def display_maps():
         # **Filter Data Based on Selected Date Range**
         filtered_data = (
             articles[(articles["date"] >= start_date) &
-                    (articles["date"] <= end_date)])
+                     (articles["date"] <= end_date)])
 
         if geo_level == "Continent":
             group_col = "continent"
@@ -90,9 +92,12 @@ def display_maps():
             {"fake_count": "sum", "real_count": "sum"}).reset_index()
 
         if map_countries:
-            country_mapping = articles[["country", group_col]].drop_duplicates()
+            country_mapping = (
+                articles[["country", group_col]].drop_duplicates())
             aggregated_data = aggregated_data.merge(
                 country_mapping, on=group_col, how="left")
+
+        st.write(f"{len(aggregated_data)} rows after filtering")
 
         # **Calculate Percentage of Fake Articles**
         aggregated_data["total_articles"] = (
@@ -117,9 +122,9 @@ def display_maps():
         display_mode = st.radio(
             "Select Display Mode:",
             options=["Fake Articles",
-                    "Real Articles",
-                    "All Articles",
-                    "% Fake of Total"],
+                     "Real Articles",
+                     "All Articles",
+                     "% Fake of Total"],
             index=0
         )
     with col2:
@@ -152,7 +157,6 @@ def display_maps():
                 locationmode=location_mode,
                 colorscale='Blues',
                 colorbar=dict(title="Real Articles", x=1.02),
-
                 text=aggregated_data[['fake_count', 'real_count']],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
@@ -169,15 +173,16 @@ def display_maps():
                 # Blue (Real) → Purple (Mix) → Red (Fake)
                 colorscale=[(0, "blue"), (0.5, "purple"), (1, "red")],
                 colorbar=dict(title="Fake-Real Mix", x=1.02),
-                text=aggregated_data[['fake_count', 'real_count',
-                                    'fake_percentage']],
+                text=aggregated_data[['fake_count',
+                                      'real_count',
+                                      'fake_percentage']],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
                     'Fake Articles: %{text[0]}<br>'
                     'Real Articles: %{text[1]}<br>'
                     '% Fake Articles: %{text[2]:.2f}%<br>'
                 ),
-                name="Fale-Real Mix"
+                name="Fake-Real Mix"
             ))
 
         else:  # **Percentage of Fake Articles**
@@ -186,7 +191,8 @@ def display_maps():
                 z=aggregated_data["fake_percentage"],
                 locationmode=location_mode,
                 colorscale='OrRd',  # Orange-Red for percentage
-                colorbar=dict(title="% Fake Articles", x=1.02),  # Center legend
+                # Center legend
+                colorbar=dict(title="% Fake Articles", x=1.02),
                 text=aggregated_data[['fake_percentage']],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
@@ -201,8 +207,8 @@ def display_maps():
                         f' (From {start_date.strftime("%Y-%m")} '
                         f'to {end_date.strftime("%Y-%m")})'),
             geo=dict(showframe=True,
-                    showcoastlines=True,
-                    projection_type='equirectangular'),
+                     showcoastlines=True,
+                     projection_type='equirectangular'),
             showlegend=False,
             width=800,
             height=800
@@ -210,3 +216,7 @@ def display_maps():
 
         # **Display Map**
         st.plotly_chart(fig)
+
+
+if __name__ == "__main__":
+    display_maps()
