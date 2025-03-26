@@ -303,7 +303,7 @@
         },
         "Upper_left": {
           "type": "image",
-          "content": "wordclouds//wordcloud_common.png"
+          "content": "wordclouds//wordcloud_all.png"
         },
         "Lower_left": {
           "type": "image",
@@ -315,7 +315,7 @@
         },
         "Upper_right": {
           "type": "image",
-          "content": "wordclouds//wordcloud_fake.png"
+          "content": "wordclouds//wordcloud_false.png"
         }
       },
       "tab3": {
@@ -328,8 +328,8 @@
           "content": "The visualisation below looks at common phrases in articles."
         },
         "Visualizations": {
-          "type": "image",
-          "content": "wordclouds//wordcloud_common.png"
+          "type": "markdown",
+          "content": ""
         }
       }
     },
