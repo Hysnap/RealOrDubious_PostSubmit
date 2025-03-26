@@ -17,14 +17,36 @@ def display_maps():
             return
     # **Convert date column to datetime.date for
     # Streamlit slider compatibility**
+    # Ensure the "date" column is in datetime format
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
     articles["date"] = articles["date"].dt.date
 
     # Get min/max dates
     min_date, max_date = articles["date"].min(), articles["date"].max()
+    # Wrap layout in a container div with custom CSS
+    Title = st.container()
+    st.markdown("### Version: v0.9")
+    st.markdown(
+        """
+        <style>
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        .column-style {
+            flex: 1;
+            padding: 1rem;
+        }
+        </style>
+        <div class='centered-container'>
+        """,
+        unsafe_allow_html=True
+    )
 
-    col1, col2 = st.columns([0.20, 0.80])
-
+    col1, col2 = st.columns([1, 3], gap="large")
     with col1:
+        st.markdown("<div class='column-style'>", unsafe_allow_html=True)
         # **Date Range Slider**
         start_date, end_date = st.slider(
             "Select Date Range:",
@@ -104,7 +126,9 @@ def display_maps():
                      "% Fake of Total"],
             index=0
         )
+        st.markdown("</div>", unsafe_allow_html=True)
     with col2:
+        st.markdown("<div class='column-style'>", unsafe_allow_html=True)
         # **Create Choropleth Map**
         fig = go.Figure()
 
@@ -117,7 +141,11 @@ def display_maps():
                 z=aggregated_data["fake_count"],
                 locationmode=location_mode,
                 colorscale='Reds',
-                colorbar=dict(title="Fake Articles", x=1.02),
+                colorbar=dict(title="Fake Articles",
+                              x=1.02,
+                              len=0.65,
+                              y=0.5,
+                              thickness=15),
                 text=aggregated_data[['fake_count', 'real_count']],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
@@ -133,7 +161,11 @@ def display_maps():
                 z=aggregated_data["real_count"],
                 locationmode=location_mode,
                 colorscale='Blues',
-                colorbar=dict(title="Real Articles", x=1.02),
+                colorbar=dict(title="Real Articles",
+                              x=1.02,
+                              len=0.65,
+                              y=0.5,
+                              thickness=15),
                 text=aggregated_data[['fake_count', 'real_count']],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
@@ -149,7 +181,11 @@ def display_maps():
                 locationmode=location_mode,
                 # Blue (Real) → Purple (Mix) → Red (Fake)
                 colorscale=[(0, "blue"), (0.5, "purple"), (1, "red")],
-                colorbar=dict(title="Fake-Real Mix", x=1.02),
+                colorbar=dict(title="Fake-Real Mix",
+                              x=1.02,
+                              len=0.65,
+                              y=0.5,
+                              thickness=15),
                 text=aggregated_data[['fake_count',
                                       'real_count',
                                       'fake_percentage']],
@@ -169,7 +205,12 @@ def display_maps():
                 locationmode=location_mode,
                 colorscale='OrRd',  # Orange-Red for percentage
                 # Center legend
-                colorbar=dict(title="% Fake Articles", x=1.02),
+                colorbar=dict(title="% Fake Articles",
+                              x=1.02,
+                              len=0.65,
+                              y=0.5,
+                              thickness=15
+                              ),
                 text=aggregated_data[['fake_percentage']],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
@@ -180,9 +221,6 @@ def display_maps():
 
         # **Update Layout**
         fig.update_layout(
-            title_text=(f'Article Mentions ({geo_level} level)'
-                        f' (From {start_date.strftime("%Y-%m")} '
-                        f'to {end_date.strftime("%Y-%m")})'),
             geo=dict(showframe=True,
                      showcoastlines=True,
                      projection_type='equirectangular'),
@@ -192,8 +230,12 @@ def display_maps():
         )
 
         # **Display Map**
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
+    title_text = f'Article Mentions ({geo_level} level) (From {start_date.strftime("%Y-%m")} to {end_date.strftime("%Y-%m")})'
+    Title.markdown(f"### {title_text}")
 
 if __name__ == "__main__":
     display_maps()

@@ -1811,3 +1811,549 @@ Traceback (most recent call last):
   File "h:\VScode\real-or-dubious-main\.venv\Lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
     raise MediaFileStorageError(f"Error opening '{filename}'") from ex
 streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_common.png'
+2025/03/26 09:42 ERROR:Failed to import Nothing.nothing: No module named 'Nothing'
+2025/03/26 09:43 ERROR:Error in execute_element_call: Error opening 'wordclouds//wordcloud_all.png'
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 427, in image_to_url
+    with open(image, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 164, in _read_file
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\page_configs.py", line 95, in execute_element_call
+    st.image(content, use_container_width=True)
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 204, in image
+    marshall_images(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 588, in marshall_images
+    proto_img.url = image_to_url(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 439, in image_to_url
+    url = runtime.get_instance().media_file_mgr.add(image, mimetype, image_id)
+  File "H:\python310\lib\site-packages\streamlit\runtime\media_file_manager.py", line 226, in add
+    file_id = self._storage.load_and_get_id(
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 115, in load_and_get_id
+    file_data = self._read_file(path_or_data)
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
+    raise MediaFileStorageError(f"Error opening '{filename}'") from ex
+streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_all.png'
+2025/03/26 09:43 CRITICAL:Menu setup crashed: Error opening 'wordclouds//wordcloud_all.png'
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 427, in image_to_url
+    with open(image, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 164, in _read_file
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 70, in mp4_datapre
+    display_page("Word Data Analysis")
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\modular_page.py", line 119, in display_page
+    execute_element_call(tab_contents.get("tab1",
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\page_configs.py", line 95, in execute_element_call
+    st.image(content, use_container_width=True)
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 204, in image
+    marshall_images(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 588, in marshall_images
+    proto_img.url = image_to_url(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 439, in image_to_url
+    url = runtime.get_instance().media_file_mgr.add(image, mimetype, image_id)
+  File "H:\python310\lib\site-packages\streamlit\runtime\media_file_manager.py", line 226, in add
+    file_id = self._storage.load_and_get_id(
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 115, in load_and_get_id
+    file_data = self._read_file(path_or_data)
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
+    raise MediaFileStorageError(f"Error opening '{filename}'") from ex
+streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_all.png'
+2025/03/26 09:44 CRITICAL:Menu setup crashed: Can only use .dt accessor with datetimelike values
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 20, in display_maps
+    articles["date"] = articles["date"].dt.date
+  File "H:\python310\lib\site-packages\pandas\core\generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+  File "H:\python310\lib\site-packages\pandas\core\accessor.py", line 224, in __get__
+    accessor_obj = self._accessor(obj)
+  File "H:\python310\lib\site-packages\pandas\core\indexes\accessors.py", line 608, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values
+2025/03/26 09:46 CRITICAL:Menu setup crashed: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:46 CRITICAL:Menu setup crashed: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:46 CRITICAL:Menu setup crashed: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:46 CRITICAL:Menu setup crashed: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:47 ERROR:Error in notesondataprep_body: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:47 CRITICAL:Menu setup crashed: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:47 ERROR:Failed to import Nothing.nothing: No module named 'Nothing'
+2025/03/26 09:47 ERROR:Error in notesondataprep_body: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:47 CRITICAL:Menu setup crashed: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\notesondataprep.py", line 7, in notesondataprep_body
+    tab1, tab2, tab3 = st.tabs("Source Data",
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+TypeError: LayoutsMixin.tabs() takes 2 positional arguments but 4 were given
+2025/03/26 09:58 ERROR:Error in pagesetup: invalid syntax. Perhaps you forgot a comma? (map_visualisation.py, line 202)
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 13, in pagesetup
+    from sl_app_pages.mod_page_calls import (
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 7, in <module>
+    from sl_visualisations.map_visualisation import display_maps
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\__init__.py", line 15, in <module>
+    module = importlib.import_module(f"{__name__}.{module_name}")
+  File "H:\python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 202
+    y=0.5
+      ^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+2025/03/26 09:58 CRITICAL:Menu setup crashed: invalid syntax. Perhaps you forgot a comma? (map_visualisation.py, line 202)
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 13, in pagesetup
+    from sl_app_pages.mod_page_calls import (
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 7, in <module>
+    from sl_visualisations.map_visualisation import display_maps
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\__init__.py", line 15, in <module>
+    module = importlib.import_module(f"{__name__}.{module_name}")
+  File "H:\python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 202
+    y=0.5
+      ^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+2025/03/26 10:05 ERROR:Error in display_maps: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+    title_text=(f'Article Mentions ({geo_level} level)'
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:05 ERROR:Error in display_maps: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+    title_text=(f'Article Mentions ({geo_level} level)'
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:05 CRITICAL:Menu setup crashed: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+    title_text=(f'Article Mentions ({geo_level} level)'
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:05 CRITICAL:Menu setup crashed: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+    title_text=(f'Article Mentions ({geo_level} level)'
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:06 CRITICAL:Menu setup crashed: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:06 CRITICAL:Menu setup crashed: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:06 CRITICAL:Menu setup crashed: local variable 'geo_level' referenced before assignment
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 45, in display_maps
+UnboundLocalError: local variable 'geo_level' referenced before assignment
+2025/03/26 10:10 ERROR:Failed to import Nothing.nothing: No module named 'Nothing'
+2025/03/26 11:08 ERROR:Error in execute_element_call: Error opening 'wordclouds//wordcloud_all.png'
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 427, in image_to_url
+    with open(image, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 164, in _read_file
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\page_configs.py", line 95, in execute_element_call
+    st.image(content, use_container_width=True)
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 204, in image
+    marshall_images(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 588, in marshall_images
+    proto_img.url = image_to_url(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 439, in image_to_url
+    url = runtime.get_instance().media_file_mgr.add(image, mimetype, image_id)
+  File "H:\python310\lib\site-packages\streamlit\runtime\media_file_manager.py", line 226, in add
+    file_id = self._storage.load_and_get_id(
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 115, in load_and_get_id
+    file_data = self._read_file(path_or_data)
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
+    raise MediaFileStorageError(f"Error opening '{filename}'") from ex
+streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_all.png'
+2025/03/26 11:08 ERROR:Error in execute_element_call: Error opening 'wordclouds//wordcloud_all.png'
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 427, in image_to_url
+    with open(image, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 164, in _read_file
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\page_configs.py", line 95, in execute_element_call
+    st.image(content, use_container_width=True)
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 204, in image
+    marshall_images(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 588, in marshall_images
+    proto_img.url = image_to_url(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 439, in image_to_url
+    url = runtime.get_instance().media_file_mgr.add(image, mimetype, image_id)
+  File "H:\python310\lib\site-packages\streamlit\runtime\media_file_manager.py", line 226, in add
+    file_id = self._storage.load_and_get_id(
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 115, in load_and_get_id
+    file_data = self._read_file(path_or_data)
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
+    raise MediaFileStorageError(f"Error opening '{filename}'") from ex
+streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_all.png'
+2025/03/26 11:08 CRITICAL:Menu setup crashed: Error opening 'wordclouds//wordcloud_all.png'
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 427, in image_to_url
+    with open(image, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 164, in _read_file
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 70, in mp4_datapre
+    display_page("Word Data Analysis")
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\modular_page.py", line 119, in display_page
+    execute_element_call(tab_contents.get("tab1",
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\page_configs.py", line 95, in execute_element_call
+    st.image(content, use_container_width=True)
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 204, in image
+    marshall_images(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 588, in marshall_images
+    proto_img.url = image_to_url(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 439, in image_to_url
+    url = runtime.get_instance().media_file_mgr.add(image, mimetype, image_id)
+  File "H:\python310\lib\site-packages\streamlit\runtime\media_file_manager.py", line 226, in add
+    file_id = self._storage.load_and_get_id(
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 115, in load_and_get_id
+    file_data = self._read_file(path_or_data)
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
+    raise MediaFileStorageError(f"Error opening '{filename}'") from ex
+streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_all.png'
+2025/03/26 11:08 CRITICAL:Menu setup crashed: Error opening 'wordclouds//wordcloud_all.png'
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 427, in image_to_url
+    with open(image, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 164, in _read_file
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'wordclouds//wordcloud_all.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 81, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 70, in mp4_datapre
+    display_page("Word Data Analysis")
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\modular_page.py", line 119, in display_page
+    execute_element_call(tab_contents.get("tab1",
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\page_configs.py", line 95, in execute_element_call
+    st.image(content, use_container_width=True)
+  File "H:\python310\lib\site-packages\streamlit\runtime\metrics_util.py", line 409, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 204, in image
+    marshall_images(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 588, in marshall_images
+    proto_img.url = image_to_url(
+  File "H:\python310\lib\site-packages\streamlit\elements\image.py", line 439, in image_to_url
+    url = runtime.get_instance().media_file_mgr.add(image, mimetype, image_id)
+  File "H:\python310\lib\site-packages\streamlit\runtime\media_file_manager.py", line 226, in add
+    file_id = self._storage.load_and_get_id(
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 115, in load_and_get_id
+    file_data = self._read_file(path_or_data)
+  File "H:\python310\lib\site-packages\streamlit\runtime\memory_media_file_storage.py", line 167, in _read_file
+    raise MediaFileStorageError(f"Error opening '{filename}'") from ex
+streamlit.runtime.media_file_storage.MediaFileStorageError: Error opening 'wordclouds//wordcloud_all.png'

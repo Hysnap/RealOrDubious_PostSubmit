@@ -4,9 +4,9 @@ from sl_utils.logger import log_function_call, streamlit_logger as logger
 
 @log_function_call(logger)
 def notesondataprep_body():
-    tab1, tab2, tab3 = st.tabs("Source Data",
+    tab1, tab2, tab3 = st.tabs(["Source Data",
                                "Data Cleansing and Assumptions",
-                               "Word and Phrase Analysis")
+                               "Word and Phrase Analysis"])
     # use markdown to create headers and sub headers
     with tab1:
         col1, col2 = st.columns(2)

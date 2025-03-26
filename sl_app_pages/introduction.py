@@ -15,7 +15,6 @@ def introduction_body():
     wmca = "https://www.wmca.org.uk/"
 
     # format text
-    st.write("---")
     st.subheader('Welcome to the Real or Dubious News Dashboard')
     st.markdown(
         """
