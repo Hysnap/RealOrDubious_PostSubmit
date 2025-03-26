@@ -11,3 +11,4 @@ kaggle.json
 .venv/
 unrequired/
 data/
+data_preparation/

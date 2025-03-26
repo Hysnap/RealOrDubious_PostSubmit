@@ -99,6 +99,7 @@ def execute_element_call(element_settings, imported_objects):
             if st.session_state.get("debug_mode", False):
                 st.error(f"❌ File `{content}` not found.")
 
+
 @log_function_call(logger)
 def execute_visualization(content):
     """

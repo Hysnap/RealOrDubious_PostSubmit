@@ -22,14 +22,17 @@ def load_model_and_vectorizer():
     vectorizer = joblib.load(VECTORIZER_PATH)
     return model, vectorizer
 
+
 def load_summary_metrics():
     return pd.read_csv(SUMMARY_PATH) if os.path.exists(SUMMARY_PATH) else None
+
 
 def load_classification_report():
     if os.path.exists(REPORT_PATH):
         with open(REPORT_PATH, "r") as f:
             return json.load(f)
     return None
+
 
 def load_explanation():
     if os.path.exists(EXPLANATION_PATH):

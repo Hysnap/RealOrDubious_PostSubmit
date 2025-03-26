@@ -37,7 +37,7 @@ def initialize_session_state():
 
     # Initialize directories
     init_state_var("directories", config.DIRECTORIES)
-    
+
     # Ensure directories exist
     for key, path in config.DIRECTORIES.items():
         os.makedirs(path, exist_ok=True)  # Creates if not exists

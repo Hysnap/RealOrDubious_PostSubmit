@@ -5,6 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sl_utils.logger import log_function_call, streamlit_logger as logger
 
+
 @log_function_call(logger)
 def visualize_data_cleanliness(datafile):
     st.title("🔍 Data Cleanliness Dashboard")

@@ -12,32 +12,9 @@ def display_maps():
         # try to get data from session state
         articles = st.session_state.data_for_map
         if articles is None:
-            articles = pd.read_csv(
-                "data/articlesformap.csv",
-                dtype={"country": str,
-                       "continent": str,
-                       "subcontinent": str,
-                       "year": int,
-                       "month": int,
-                       "day": int,
-                       "fake_count": int,
-                       "real_count": int},
-                parse_dates=["date"])
-    if articles is None or articles.empty:
-        st.error("Failed to load data. Check ETL process.")
-        streamlit_logger.error("Failed to load data. Check ETL process.")
-        return
-    # **Ensure 'date' column is in proper datetime format**
-    if "date" not in articles or articles["date"].isnull().all():
-        # **Fallback: Construct date from year, month, day**
-        articles["date"] = pd.to_datetime(
-            articles[["year", "month", "day"]]
-            .astype(str).agg('-'.join, axis=1),
-            errors='coerce'
-        )
-    # If there are still NaT values, fill with a default valid date
-    articles["date"].fillna(pd.Timestamp("2000-01-01"), inplace=True)
-
+            st.error("Failed to load data. Check ETL process.")
+            streamlit_logger.error("Failed to load data. Check ETL process.")
+            return
     # **Convert date column to datetime.date for
     # Streamlit slider compatibility**
     articles["date"] = articles["date"].dt.date
