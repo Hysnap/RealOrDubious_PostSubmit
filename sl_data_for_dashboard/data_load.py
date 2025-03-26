@@ -40,45 +40,45 @@ def mapdata():
 @log_function_call(logger)
 def dashboarddata():
     df = pd.read_csv("sl_data_for_dashboard//dashboard_data.zip",
-                     usecols=None,  # Import all columns
-                     dtype={
-                        'index': int,
-                        'title': str,
-                        'subject': str,
-                        'label': int,
-                        'media_type': str,
-                        'month': int,
-                        'day': int,
-                        'year': int,
-                        'day_of_week': str,
-                        'week_of_year': int,
-                        'is_weekend': int,
-                        'is_weekday': int,
-                        'holiday': int,
-                        'day_label': str,
-                        'article_id': int,
-                        'source_name': str,
-                        'title_length': int,
-                        'text_length': int,
-                        'article_polarity': float,
-                        'article_subjectivity': float,
-                        'title_polarity': float,
-                        'title_subjectivity': float,
-                        'overall_polarity': float,
-                        'overall_subjectivity': float,
-                        'contradiction_polarity': float,
-                        'contradiction_subjectivity': float,
-                        'polarity_variations': float,
-                        'subjectivity_variations': float,
-                        'sentiment_article': str,
-                        'sentiment_title': str,
-                        'sentiment_overall': str,
-                        'unique_location_count': int
-                     },
-                     compression='zip',
-                     # Ensure date_clean is imported as a date
-                     parse_dates=['date_clean']
-                     )
+            # Import all columns
+            dtype={
+                'index': int,
+                'title': str,
+                'subject': str,
+                'label': int,
+                'media_type': 'category',
+                'month': int,
+                'day': int,
+                'year': int,
+                'day_of_week': 'category',
+                'week_of_year': int,
+                'is_weekend': int,
+                'is_weekday': int,
+                'holiday': int,
+                'day_label': str,
+                'article_id': int,
+                'source_name': str,
+                'title_length': int,
+                'text_length': int,
+                'article_polarity': float,
+                'article_subjectivity': float,
+                'title_polarity': float,
+                'title_subjectivity': float,
+                'overall_polarity': float,
+                'overall_subjectivity': float,
+                'contradiction_polarity': float,
+                'contradiction_subjectivity': float,
+                'polarity_variations': float,
+                'subjectivity_variations': float,
+                'sentiment_article': 'category',
+                'sentiment_title': 'category',
+                'sentiment_overall': 'category',
+                'unique_location_count': int
+            },
+            compression='zip',
+            # Ensure date_clean is imported as a date
+            parse_dates=['date_clean']
+            )
     logger.debug("The shape of the data is: ", df.shape)
     logger.debug(df.head())
 
