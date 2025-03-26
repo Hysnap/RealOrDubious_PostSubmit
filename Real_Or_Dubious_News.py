@@ -3,18 +3,26 @@ A streamlist app to analyze political donations in the UK
 Run this file first to start the app
 """
 # import necessary modules
-import streamlit as st
 import os
 import sys
-# Set the page config at the very beginning of the script
-st.set_page_config(page_title="Real or Dubious News",
-                   layout="wide")
+
+# Force root path to ensure sl_* modules resolve correctly
+project_root = os.path.dirname(os.path.abspath(__file__))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+# Print or log to confirm
+print("PYTHONPATH setup:", sys.path)
 
 project_root = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(project_root)
 
 # import local modules
 try:
+    import streamlit as st
+    # Set the page config at the very beginning of the script
+    st.set_page_config(page_title="Real or Dubious News",
+                       layout="wide")
     import setup
     import ROD_menu
     from sl_utils.logger import streamlit_logger as logger
