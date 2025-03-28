@@ -10,3 +10,4 @@ importlib
 bcrypt
 nltk
 wordcloud
+scikit-learn

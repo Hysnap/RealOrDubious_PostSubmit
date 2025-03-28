@@ -177,7 +177,8 @@ def notesondataprep_body():
             st.write("---")
             # provide description of steps taken in ETL.py and TRANSORM.py and data_prep.py
             st.markdown(
-            """**Description of Data Preparation Steps:**
+            '''
+            **Description of Data Preparation Steps:**
 
             1. **Data Loading and Cleaning:**
                 - Load data from CSV files.
@@ -193,7 +194,7 @@ def notesondataprep_body():
                 - Append NLP-extracted locations to text.
                 - Extract locations from articles and split them into a separate dataframe.
                 - Summarize location data by `article_id` and `location`.
-                - Create a dataframe of unique locations and filter out ignored locations. """)
+                - Create a dataframe of unique locations and filter out ignored locations. ''')
         with col2:
             st.write("---")
             st.markdown("""

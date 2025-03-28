@@ -8,15 +8,15 @@ import ast
 import pandas as pd
 import time
 import tqdm
-from geopy.exc import GeocoderTimedOut
-from geopy.geocoders import GoogleV3
+# from geopy.exc import GeocoderTimedOut
+# from geopy.geocoders import GoogleV3
 from google.cloud import api_keys_v2
-from google.cloud.api_keys_v2 import Key
+# from google.cloud.api_keys_v2 import Key
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-from textblob import TextBlob
-import spacy
+# from textblob import TextBlob
+# import spacy
 
 # attach tqdm to pandas
 tqdm.pandas

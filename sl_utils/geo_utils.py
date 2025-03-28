@@ -1,3 +1,19 @@
+from sl_utils.logger import streamlit_logger as logger
+import os
+import time
+import pandas as pd
+import spacy
+from geopy.exc import GeocoderTimedOut
+from flashtext import KeywordProcessor
+from dotenv import load_dotenv
+from pathlib import Path
+from geopy.geocoders import GoogleV3
+from google.cloud import api_keys_v2
+from google.cloud.api_keys_v2 import Key
+from textblob import TextBlob
+import spacy
+
+
 # Function to get geolocation information
 def get_geolocation_info(location):
     usetimedelay = True

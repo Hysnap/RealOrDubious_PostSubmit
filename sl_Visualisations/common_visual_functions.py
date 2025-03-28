@@ -7,6 +7,7 @@ import pandas as pd
 from sl_components.filters import filter_by_date
 from nltk.corpus import stopwords
 from wordcloud import WordCloud
+import plotly.express as px
 
 
 # ================= General Helpers =====================
@@ -79,13 +80,13 @@ def select_display_type(key):
 
 
 def prepare_counts(df, group_by, display_type):
-    counts = df.groupby(group_by).size().reset_index(name="count")
+    counts = df.groupby(group_by).agg(article_count=("article_count", "sum")).reset_index()
 
     if display_type == "Percentage":
-        counts["percentage"] = counts["count"] / counts.groupby(group_by[0])["count"].transform("sum") * 100
+        counts["percentage"] = counts["article_count"] / counts.groupby(group_by[0])["article_count"].transform("sum") * 100
         return counts, "percentage", "Percentage of Articles"
 
-    return counts, "count", "Count of Articles"
+    return counts, "article_count", "Sum of Article Counts"
 
 
 # ====================== Plotting =======================
@@ -170,9 +171,19 @@ def plot_boxplot(df, x_col, y_col, title, xlabel, ylabel, palette=None):
     st.pyplot(fig)
 
 
-def plot_hexbin_grid(df, x_col, y_col, label_col, title, xlabel, ylabel,
-                     cmap="coolwarm", xlim=None, ylim=None, threshold=None,
-                     marginal_bins=30, grid_size=30):
+def plot_hexbin_grid(df,
+                     x_col,
+                     y_col,
+                     label_col,
+                     title,
+                     xlabel,
+                     ylabel,
+                     cmap="coolwarm",
+                     xlim=None,
+                     ylim=None,
+                     threshold=None,
+                     marginal_bins=30,
+                     grid_size=30):
     if threshold:
         df.loc[df[x_col].abs() < threshold, x_col] = None
         df.loc[df[y_col].abs() < threshold, y_col] = None
@@ -183,9 +194,12 @@ def plot_hexbin_grid(df, x_col, y_col, label_col, title, xlabel, ylabel,
     grid = sns.jointplot(data=df, x=x_col, y=y_col, kind="hex",
                          cmap=cmap, gridsize=grid_size, marginal_ticks=True)
 
-    hexbin = grid.ax_joint.hexbin(df[x_col], df[y_col], C=df[label_col],
-                                   reduce_C_function=np.mean,
-                                   gridsize=grid_size, cmap=cmap)
+    hexbin = grid.ax_joint.hexbin(df[x_col],
+                                  df[y_col],
+                                  C=df[label_col],
+                                  reduce_C_function=np.mean,
+                                  gridsize=grid_size,
+                                  cmap=cmap)
 
     cbar = fig.colorbar(hexbin, ax=grid.ax_joint)
     cbar.set_label("Proportion of Real Articles", fontsize=10)
@@ -195,8 +209,8 @@ def plot_hexbin_grid(df, x_col, y_col, label_col, title, xlabel, ylabel,
     sns.histplot(df[y_col], bins=marginal_bins,
                  ax=grid.ax_marg_y, color="gray", kde=True)
 
-    grid.fig.suptitle(title, fontsize=12)
-    grid.fig.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to make space for the title
+    grid.figure.suptitle(title, fontsize=12)
+    grid.figure.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to make space for the title
     grid.ax_joint.set_xlabel(xlabel, fontsize=10)
     grid.ax_joint.set_ylabel(ylabel, fontsize=10)
 
@@ -207,6 +221,68 @@ def plot_hexbin_grid(df, x_col, y_col, label_col, title, xlabel, ylabel,
 
     st.pyplot(grid.fig)
 
+
+def plotly_weighted_scatter(df, x, y, size, label_col,
+                            title, xlabel, ylabel,
+                            mode="binary", max_size=40):
+    if df.empty:
+        st.warning("No data available to display.")
+        return
+
+    df = df.copy()
+
+    if mode == "binary":
+        df[label_col] = df[label_col].astype(str)
+        df = df.sort_values(by=label_col)
+
+        fig = px.scatter(
+            df,
+            x=x,
+            y=y,
+            size=size,
+            color=label_col,
+            color_discrete_map={"0": "red", "1": "green"},
+            size_max=max_size,
+            opacity=0.7,
+            title=title,
+            hover_data={x: True, y: True, size: True, label_col: True}
+        )
+
+    elif mode == "ratio":
+        # Pivot the data to combine label 0 and 1 counts at each x/y point
+        grouped = df.groupby([x, y, label_col])[size].sum().unstack(fill_value=0).reset_index()
+        grouped.columns.name = None  # remove MultiIndex name
+
+        grouped["real_ratio"] = grouped.get(1, 0) / (grouped.get(1, 0) + grouped.get(0, 0))
+        grouped["real_ratio"] = grouped["real_ratio"].fillna(0.5)
+        grouped["article_count"] = grouped.get(1, 0) + grouped.get(0, 0)
+
+        fig = px.scatter(
+            grouped,
+            x=x,
+            y=y,
+            size="article_count",
+            color="real_ratio",
+            color_continuous_scale=["red", "purple", "green"],
+            size_max=max_size,
+            opacity=0.7,
+            title=title,
+            hover_data={x: True, y: True, "article_count": True, "real_ratio": True}
+        )
+
+    else:
+        st.error(f"Unknown mode '{mode}' for plotly_weighted_scatter.")
+        return
+
+    fig.update_layout(
+        xaxis_title=xlabel,
+        yaxis_title=ylabel,
+        legend_title="Label" if mode == "binary" else "Realness Ratio",
+        margin=dict(l=20, r=20, t=40, b=20),
+        height=500
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
 
 # =============== Wordcloud Helpers ====================
 

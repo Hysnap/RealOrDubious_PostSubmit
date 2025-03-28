@@ -39,50 +39,45 @@ def mapdata():
 
 @log_function_call(logger)
 def dashboarddata():
-    df = pd.read_csv("sl_data_for_dashboard//dashboard_data.zip",
-            # Import all columns
-            dtype={
-                'index': int,
-                'title': str,
-                'subject': str,
-                'label': int,
-                'media_type': 'category',
-                'month': int,
-                'day': int,
-                'year': int,
-                'day_of_week': 'category',
-                'week_of_year': int,
-                'is_weekend': int,
-                'is_weekday': int,
-                'holiday': int,
-                'day_label': str,
-                'article_id': int,
-                'source_name': str,
-                'title_length': int,
-                'text_length': int,
-                'article_polarity': float,
-                'article_subjectivity': float,
-                'title_polarity': float,
-                'title_subjectivity': float,
-                'overall_polarity': float,
-                'overall_subjectivity': float,
-                'contradiction_polarity': float,
-                'contradiction_subjectivity': float,
-                'polarity_variations': float,
-                'subjectivity_variations': float,
-                'sentiment_article': 'category',
-                'sentiment_title': 'category',
-                'sentiment_overall': 'category',
-                'unique_location_count': int
-            },
-            compression='zip',
-            # Ensure date_clean is imported as a date
-            parse_dates=['date_clean']
-            )
-    logger.debug("The shape of the data is: ", df.shape)
-    logger.debug(df.head())
+    df = pd.read_csv(
+        "sl_data_for_dashboard//dashboard_data.zip",
+        compression='zip',
+        low_memory=False
+    )
 
-    # load data in to data_clean st.session_state
+    # Rename columns for consistency
+    df = df.rename(columns={
+        "title_polarity_value": "title_polarity",
+        "article_polarity_value": "article_polarity",
+        "title_subjectivity_value": "title_subjectivity",
+        "article_subjectivity_value": "article_subjectivity",
+        "overall_polarity_value": "overall_polarity",
+        "overall_subjectivity_value": "overall_subjectivity",
+        "contradiction_polarity_value": "contradiction_polarity",
+        "contradiction_subjectivity_value": "contradiction_subjectivity",
+        "polarity_variations_value": "polarity_variations",
+        "subjectivity_variations_value": "subjectivity_variations",
+        "count_of_locations": "unique_location_count",
+        "text_length_value": "text_length",
+        "article_id": "article_count"
+    })
+
+    # Map full month names to numbers
+    month_map = {
+        'January': 1, 'February': 2, 'March': 3, 'April': 4,
+        'May': 5, 'June': 6, 'July': 7, 'August': 8,
+        'September': 9, 'October': 10, 'November': 11, 'December': 12
+    }
+
+    # Map, then fill any unrecognized or missing months with April (4)
+    df["month_num"] = df["month"].map(month_map).fillna(4).astype(int)
+
+    # Format the date_clean field
+    df["date_clean"] = pd.to_datetime(
+        df["year"].astype(int).astype(str) + "-" +
+        df["month_num"].astype(str).str.zfill(2) + "-01"
+    )
+    
     return df
 
 
