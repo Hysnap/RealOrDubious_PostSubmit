@@ -1517,3 +1517,46 @@ pandas.errors.IntCastingNaNError: Cannot convert non-finite values (NA or inf) t
 2025/03/29 10:11 INFO:wordcountdata executed successfully
 2025/03/29 10:11 INFO:wordcountdata executed successfully
 2025/03/29 10:11 INFO:wordcountdata executed successfully
+2025/03/29 04:07 INFO:mapdata executed successfully
+2025/03/29 04:07 INFO:dashboarddata executed successfully
+2025/03/29 04:07 ERROR:Error in wordcountdata: [Errno 2] No such file or directory: 'sl_data_for_dashboard//ngram_summary_v1.zip'
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+  File "H:\VScode\real-or-dubious-main\sl_data_for_dashboard\data_load.py", line 87, in wordcountdata
+    df = pd.read_csv(
+  File "H:\python310\lib\site-packages\pandas\io\parsers\readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "H:\python310\lib\site-packages\pandas\io\parsers\readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "H:\python310\lib\site-packages\pandas\io\parsers\readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "H:\python310\lib\site-packages\pandas\io\parsers\readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+  File "H:\python310\lib\site-packages\pandas\io\common.py", line 784, in get_handle
+    handle = _BytesZipFile(
+  File "H:\python310\lib\site-packages\pandas\io\common.py", line 1027, in __init__
+    self.buffer: zipfile.ZipFile = zipfile.ZipFile(  # type: ignore[assignment]
+  File "H:\python310\lib\zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'sl_data_for_dashboard//ngram_summary_v1.zip'
+2025/03/29 04:08 INFO:mapdata executed successfully
+2025/03/29 04:08 INFO:dashboarddata executed successfully
+2025/03/29 04:08 INFO:mapdata executed successfully
+2025/03/29 04:08 INFO:dashboarddata executed successfully
+2025/03/29 04:08 INFO:mapdata executed successfully
+2025/03/29 04:08 INFO:dashboarddata executed successfully
+2025/03/29 04:13 INFO:mapdata executed successfully
+2025/03/29 04:13 INFO:dashboarddata executed successfully
+2025/03/29 04:18 INFO:mapdata executed successfully
+2025/03/29 04:18 INFO:dashboarddata executed successfully
+2025/03/29 04:24 INFO:mapdata executed successfully
+2025/03/29 04:24 INFO:dashboarddata executed successfully
+2025/03/29 04:29 INFO:mapdata executed successfully
+2025/03/29 04:29 INFO:dashboarddata executed successfully
+2025/03/29 04:32 INFO:mapdata executed successfully
+2025/03/29 04:32 INFO:dashboarddata executed successfully
+2025/03/29 04:34 INFO:mapdata executed successfully
+2025/03/29 04:34 INFO:dashboarddata executed successfully
+2025/03/29 04:39 INFO:mapdata executed successfully
+2025/03/29 04:39 INFO:dashboarddata executed successfully

@@ -5,95 +5,87 @@ import re
 
 
 def wordcloud_explorer():
-    st.title("🧠 WordCloud Explorer")
+    st.title("🧠 WordCloud Explorer (All Years)")
 
-# === Config ===
-    IMAGE_DIR = Path("wordclouds")
-    REQUIRED_CATEGORIES = {
-    "Real": "real",
-    "Dubious": "dubious",
-    "Overall": "all"
-}
-    UNIQUE_CATEGORIES = {
-    "Real (Unique)": "real_unique",
-    "Dubious (Unique)": "dubious_unique",
-    "Common to Both": "common"
-}
-    PATTERN = re.compile(r"wordcloud_(\w+)_([123])gram_(\d{4})\.png")
+    # --- Configuration ---
+    STATIC_DIR = Path("static/wordclouds")  # Where images are now stored
+    CATEGORY_LABELS = {
+        "real": "Real",
+        "dubious": "Dubious",
+        "all": "Overall"
+    }
+    PHRASE_LABELS = {
+        1: "Single Words",
+        2: "2-word Phrases",
+        3: "3-word Phrases"
+    }
+    VALID_CATEGORIES = set(CATEGORY_LABELS.keys())
 
-# === Load all available images ===
+    # --- Parse available files ---
+    pattern = re.compile(r"wordcloud_(\w+)_([123])gram_(\d{4})\.png")
     cloud_data = []
-    for path in IMAGE_DIR.glob("*.png"):
-        match = PATTERN.match(path.name)
+
+    for path in STATIC_DIR.glob("*.png"):
+        match = pattern.match(path.name)
         if match:
             category, ngram, year = match.groups()
             cloud_data.append({
-            "path": path,
-            "category": category,
-            "ngram": int(ngram),
-            "year": int(year)
-        })
+                "path": path,
+                "category": category,
+                "ngram": int(ngram),
+                "year": int(year)
+            })
 
     if not cloud_data:
-        st.warning("No wordclouds found in the 'wordclouds/' folder.")
-        st.stop()
+        st.error("❌ No word cloud images found in 'static/wordclouds/'")
+        return
 
-# === Extract dropdown options ===
-    years = sorted({d["year"] for d in cloud_data})
-    ngrams = sorted({d["ngram"] for d in cloud_data})
+    # --- Sidebar controls ---
+    all_years = sorted({d["year"] for d in cloud_data})
+    available_ngrams = sorted({d["ngram"] for d in cloud_data if d["category"] in VALID_CATEGORIES})
 
     with st.sidebar:
-        st.header("🧩 Filters")
-        selected_ngram = st.selectbox("Select N-gram Size", ngrams)
-        selected_year = st.selectbox("Select Year", years)
+        st.header("🔧 Controls")
+        selected_ngram = st.selectbox(
+            "Word/Phrase Type",
+            available_ngrams,
+            format_func=lambda n: PHRASE_LABELS.get(n, f"{n}-word"),
+            key="wordcloud_phrase_selector"
+        )
+        word_limit = st.slider("Max Words (visual density only)", 10, 200, 100)
 
-    def find_image(category_key):
-        for entry in cloud_data:
-            if (entry["category"] == category_key and
-            entry["ngram"] == selected_ngram and
-            entry["year"] == selected_year):
-                return entry["path"]
-        return None
+    st.markdown(f"### Displaying: {PHRASE_LABELS[selected_ngram]} — Top {word_limit} Words")
 
-    def display_columns_from_dict(title_dict):
-        cols = st.columns(len(title_dict))
-        for col, (label, cat_key) in zip(cols, title_dict.items()):
-            with col:
-                st.markdown(f"### {label}")
-                img_path = find_image(cat_key)
-                if img_path:
-                    st.image(Image.open(img_path), use_column_width=True)
+    # --- Display word clouds grouped by year ---
+    for year in all_years:
+        st.markdown(f"## 📅 Year: {year}")
+        cols = st.columns(3)
+
+        for idx, category_key in enumerate(["real", "dubious", "all"]):
+            match = next(
+                (d for d in cloud_data
+                 if d["ngram"] == selected_ngram and
+                    d["year"] == year and
+                    d["category"] == category_key),
+                None
+            )
+
+            with cols[idx]:
+                st.markdown(f"**{CATEGORY_LABELS[category_key]}**")
+                if match:
+                    img_path = match["path"]
+                    st.image(Image.open(img_path), use_container_width=True)
+
+                    # Public URL for the browser to access
+                    public_url = f"/static/wordclouds/{img_path.name}"
+
+                    # Add link to view fullscreen
+                    st.markdown(
+                        f'<a href="{public_url}" target="_blank">🔍 Click to view fullscreen</a>',
+                        unsafe_allow_html=True
+                    )
                 else:
                     st.warning("Not found")
 
-# === Tabs Interface ===
-    tab1, tab2, tab3 = st.tabs(["🔍 Main Comparison", "🧩 Unique & Common", "🧪 Other Wordclouds"])
+    st.caption("Note: Word count limit is currently visual-only. Adjust during generation for stricter filtering.")
 
-    with tab1:
-        st.subheader(f"{selected_ngram}-gram | {selected_year}")
-        display_columns_from_dict(REQUIRED_CATEGORIES)
-
-    with tab2:
-        st.subheader(f"Unique/Common Terms — {selected_ngram}-gram | {selected_year}")
-        display_columns_from_dict(UNIQUE_CATEGORIES)
-
-    with tab3:
-        st.subheader(f"Other Wordclouds — {selected_ngram}-gram | {selected_year}")
-        known_keys = set(REQUIRED_CATEGORIES.values()) | set(UNIQUE_CATEGORIES.values())
-
-        other_imgs = [
-        d for d in cloud_data
-        if d["ngram"] == selected_ngram and
-           d["year"] == selected_year and
-           d["category"] not in known_keys
-    ]
-
-        if not other_imgs:
-            st.info("No additional wordclouds found for this selection.")
-        else:
-            for item in other_imgs:
-                label = item["category"].replace("_", " ").title()
-                st.markdown(f"#### {label}")
-                st.image(Image.open(item["path"]), use_column_width=True)
-
-return wordcloud_explorer()

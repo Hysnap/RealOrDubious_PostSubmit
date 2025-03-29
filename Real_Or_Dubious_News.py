@@ -64,15 +64,15 @@ try:
         def load_dashboard_data():
             return dashboarddata()
 
-        st.cache_data()
+        # st.cache_data()
 
-        def load_wordcount_data():
-            return wordcountdata()
+        # def load_wordcount_data():
+        #     return wordcountdata()
 
         # Store data in session state
         st.session_state['data_for_map'] = load_mapdata()
         st.session_state['data_clean'] = load_dashboard_data()
-        st.session_state['wordcount_data'] = load_wordcount_data()
+        # st.session_state['wordcount_data'] = load_wordcount_data()
 
 except Exception as e:
     logger.critical(f"First load crashed: {e}", exc_info=True)
