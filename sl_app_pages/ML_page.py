@@ -49,25 +49,17 @@ def run():
     option = st.sidebar.radio("Choose an option", ["Model Overview", "Test a News Article"])
 
     if option == "Model Overview":
-        st.header("Model Overview")
-        st.write(f"### Model Type: RandomForest ({MODEL_TYPE.title()})")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.header("Model Overview")
+            st.write(f"### Model Type: RandomForest ({MODEL_TYPE.title()})")
 
-        if hasattr(model, "feature_importances_"):
-            st.write("### Feature Importance")
-            st.bar_chart(pd.Series(model.feature_importances_, name="Feature Importance"))
-
-        summary_df = load_summary_metrics()
-        if summary_df is not None:
-            st.write("### Evaluation Summary")
-            st.dataframe(summary_df)
-
-        if MODEL_TYPE == "classification":
-            # Full classification report
-            full_report = load_classification_report()
-            if full_report:
-                st.write("### Detailed Classification Report")
-                st.json(full_report)
-
+            st.markdown(load_explanation())
+            summary_df = load_summary_metrics()
+            if summary_df is not None:
+                st.write("### Evaluation Summary")
+                st.dataframe(summary_df)
+        with col2:
             # 🔥 NEW: Load and display confusion matrix heatmap
             conf_path = f"{DATA_DIR}/confusion_matrix.csv"
             if os.path.exists(conf_path):
@@ -90,8 +82,30 @@ def run():
                             ax=ax)
                 st.pyplot(fig)
 
-        st.write("### Evaluation Metrics Explanation")
-        st.markdown(load_explanation())
+        # provide guidance on meanings of Classification Report metrics
+        st.write("### Classification Report Metrics")
+        st.write(
+            """
+            - **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
+            - **Recall**: The ratio of correctly predicted positive observations to all actual positives.
+            - **F1 Score**: The weighted average of Precision and Recall.
+            - **Support**: The number of actual occurrences of the class in the specified dataset.
+            """
+        )
+
+        if MODEL_TYPE == "classification":
+            # Full classification report
+            full_report = load_classification_report()
+            if full_report:
+                st.write("### Detailed Classification Report")
+            
+                # Create a DataFrame for better visualization
+                report_df = pd.DataFrame(full_report).transpose()
+                report_df.reset_index(inplace=True)
+                report_df.rename(columns={"index": "Metric"}, inplace=True)
+                
+                # Highlight important metrics
+                st.dataframe(report_df.style.highlight_max(axis=0, subset=["precision", "recall", "f1-score"], color="lightgreen"))
 
     elif option == "Test a News Article":
         st.header("Test a News Article")

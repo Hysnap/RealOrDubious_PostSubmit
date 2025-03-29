@@ -58,6 +58,27 @@ def notesondataprep_body():
             - **Ai_Human.csv** (487,235 records)
             - `Text`
             - `Generated` (1 = AI, 0 = human)
+
+            [Fake/Real News Dataset (2013-2020)](https://www.kaggle.com/datasets/techykajal/fakereal-news)
+            **Files and Structure**
+            - **New Task.csv** (9960 records)
+            - `News_Headline`
+            - `Link_Of_News`
+            - `Source` (author of the post)
+            - `Stated_On` (date posted on social media)
+            - `Date` (date analyzed by fact-checkers)
+            - `Label` (True, Mostly-True, Half-True, Barely-True, False, Pants on Fire)
+
+            [Fake News Dataset Around the Syrian War (2014-2018)](https://www.kaggle.com/datasets/mohamadalhasan/a-fake-news-dataset-around-the-syrian-war)
+            **Files and Structure**
+            - **FA-Kes-Dataset.csv** (774 records)
+            - `Index`
+            - `Title_of_Article`
+            - `article_content`
+            - `source`
+            - `date`
+            - `location`
+            - `Label`
             ''')
         with col2:
             st.write("---")
@@ -120,27 +141,6 @@ def notesondataprep_body():
             - `source` (who can verify the claim)
             - `relation` (Related or Unrelated)
             - `F-type` (Type of fake news: Clickbait, Satire, Misleading)
-
-            [Fake/Real News Dataset (2013-2020)](https://www.kaggle.com/datasets/techykajal/fakereal-news)
-            **Files and Structure**
-            - **New Task.csv** (9960 records)
-            - `News_Headline`
-            - `Link_Of_News`
-            - `Source` (author of the post)
-            - `Stated_On` (date posted on social media)
-            - `Date` (date analyzed by fact-checkers)
-            - `Label` (True, Mostly-True, Half-True, Barely-True, False, Pants on Fire)
-
-            [Fake News Dataset Around the Syrian War (2014-2018)](https://www.kaggle.com/datasets/mohamadalhasan/a-fake-news-dataset-around-the-syrian-war)
-            **Files and Structure**
-            - **FA-Kes-Dataset.csv** (774 records)
-            - `Index`
-            - `Title_of_Article`
-            - `article_content`
-            - `source`
-            - `date`
-            - `location`
-            - `Label`
             ''')
         st.write("### The final dataset used was")
         st.markdown('''
@@ -170,11 +170,11 @@ def notesondataprep_body():
             The next step will be to get the data, combine the two files with labels added for fake and true.  Then review the cleanliness, implement data cleansing and start analysis.
             ''')
     with tab2:
+        st.write("---")
+        st.subheader("ETL Processing")
+        st.write("---")
         col1, col2 = st.columns(2)
         with col1:
-            st.write("---")
-            st.subheader("ETL Processing")
-            st.write("---")
             # provide description of steps taken in ETL.py and TRANSORM.py and data_prep.py
             st.markdown(
             '''
@@ -196,7 +196,6 @@ def notesondataprep_body():
                 - Summarize location data by `article_id` and `location`.
                 - Create a dataframe of unique locations and filter out ignored locations. ''')
         with col2:
-            st.write("---")
             st.markdown("""
             4. **Geographical Data Enrichment:**
                 - Extract latitude, longitude, and address information.

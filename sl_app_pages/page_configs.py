@@ -75,8 +75,16 @@ def execute_element_call(element_settings, imported_objects):
                 st.error(f"❌ Function `{content}` not found.")
 
     elif element_type == "markdown":
-        st.markdown(content)
-        logger.info(f"Displayed markdown: {content}")
+        if content.startswith("[[imageblock]]"):
+            # Handle custom image markdown via st.image
+            lines = content.replace("[[imageblock]]", "").strip().splitlines()
+            cols = st.columns(len(lines))
+            for col, img_path in zip(cols, lines):
+                with col:
+                    st.image(img_path.strip(), use_container_width=True)
+            logger.info("Displayed images via imageblock")
+        else:
+            st.markdown(content, unsafe_allow_html=True)
 
     elif element_type == "text":
         st.write(content)

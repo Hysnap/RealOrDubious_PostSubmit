@@ -251,11 +251,7 @@
     }
   },
   "Word Data Analysis": {
-    "required_elements": {
-      "T1C1V1": "sl_visualisations.article_count_refactor.plot_article_count_by_day_label",
-      "T1C2V1": "sl_visualisations.article_count_refactor.plot_article_count_by_day",
-      "T2C1V1": "sl_visualisations.article_count_refactor.plot_article_count_by_location"
-    },
+    "required_elements": {},
     "page_settings": {
       "title": "Word and Phrase Analysis",
       "description": "Word and Phrase Analysis.",
@@ -269,67 +265,67 @@
       "tab1": {
         "Header": {
           "type": "sub header",
-          "content": "Analysis by Date and Day"
+          "content": "Wordclouds for 2017"
         },
         "Upper": {
           "type": "markdown",
-          "content": "### Trends in Article Counts by Day\n\nThere are some visible trends when we look at the number of **Dubious** and **Real** articles by day. Below, I have created a label that identifies 'special' days or simply allocates the day of the week.\n\n---\n\n### Locations Mentioned in Articles\n\nThe number of different locations mentioned in articles is also analyzed. It is clear that the **USA** is mentioned more than any other location.\n\n---\n\n### Articles by Day of the Week\n\nBelow, we see the number of articles by day of the week or special date. It is evident that there are more articles on **Monday** and **Tuesday** than any other day. This is likely due to the weekend news cycle."
+          "content": "The word clouds below are for 2017. It is interesting to see that there are little differences in the words used in Real and Dubious articles.  The word clouds below show the most common words in Real and Dubious articles.  The top left is the words in all articles analysed, the top right is the words in Real articles, the bottom left is the words in Dubious articles and the bottom right is the words that are common in both Real and dubious articles."
         },
         "Upper_left": {
           "type": "image",
-          "content": "wordclouds//wordcloud_all.png"
+          "content": "wordclouds//wordcloud_all_2017.png"
         },
         "Lower_left": {
-          "type": "visualization",
-          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_day_label"
+          "type": "image",
+          "content": "wordclouds//wordcloud_dubious_2017.png"
         },
         "Upper_right": {
-          "type": "visualization",
-          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_day"
+          "type": "image",
+          "content": "wordclouds//wordcloud_real_2017.png"
         },
         "Lower_right": {
-          "type": "visualization",
-          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_location"
+          "type": "image",
+          "content": "wordclouds//wordcloud_common_2017.png"
         }
       },
       "tab2": {
         "Header": {
           "type": "sub header",
-          "content": "Analysis of Words in Articles"
+          "content": "Word clouds for 2016"
         },
         "Upper": {
           "type": "markdown",
-          "content": "### Word Clouds Analysis\n\nBelow are some word clouds showing the most common words in **Real** and **Dubious** articles. These word clouds are created to only include words unique to each type of article.\n\n---\n\n#### Common Words in Real and Dubious Articles\n\nBelow the unique word clouds, you will find a word cloud displaying the most common words that appear in both **Real** and **Dubious** articles. Top left is the words in all articles analysed, top right is the words in Real articles, bottom left is the words in Dubious articles and bottom right is the words only found in dubious articles."
+          "content": "### Word Clouds Analysis 2016 \n\nIt is interesting to see that there are little differences in the words again used in Real and Dubious articles.  The word clouds below show the most common words in Real and Dubious articles.  The top left is the words in all articles analysed, the top right is the words in Real articles, the bottom left is the words in Dubious articles and the bottom right is the words that are common in both Real and dubious articles. There are some obvious exceptions such as the word the mention of Clinton, people, image and hillary which are mentioned more in Dubious articles.  The word cloud for all articles is also interesting as it shows the most common words in all articles analysed."
         },
         "Upper_left": {
           "type": "image",
-          "content": "wordclouds//wordcloud_all.png"
+          "content": "wordclouds//wordcloud_all_2016.png"
         },
         "Lower_left": {
           "type": "image",
-          "content": "wordclouds//wordcloud_false.png"
+          "content": "wordclouds//wordcloud_dubious_2016.png"
         },
         "Lower_right": {
           "type": "image",
-          "content": "wordclouds//wordcloud_true.png"
+          "content": "wordclouds//wordcloud_real_2016.png"
         },
         "Upper_right": {
           "type": "image",
-          "content": "wordclouds//wordcloud_false.png"
+          "content": "wordclouds//wordcloud_common_2016.png"
         }
       },
       "tab3": {
         "Header": {
           "type": "header",
-          "content": "Analysis of common phrases in articles"
+          "content": "Unique words and Phrases in Real and Dubious articles"
         },
         "Upper": {
           "type": "markdown",
-          "content": "The visualisation below looks at common phrases in articles."
+          "content": "The visualisation below looks at unique phrases in articles the first image is the unique words in 2016 real articles, the second is the unique words in 2016 dubious articles, the third is the unique words in 2017 real articles and the last is the unique words in 2017 dubious articles.  The images are word clouds and show the most common phrases in each of the articles."
         },
         "Visualizations": {
           "type": "markdown",
-          "content": ""
+          "content": "[[imageblock]]\nwordclouds/wordcloud_real_unique_2016.png\nwordclouds/wordcloud_dubious_unique_2016.png\nwordclouds/wordcloud_real_unique_2017.png\nwordclouds/wordcloud_dubious_unique_2017.png"
         }
       }
     },
