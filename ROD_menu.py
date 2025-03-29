@@ -10,6 +10,7 @@ def pagesetup():
     from sl_app_pages.introduction import introduction_body
     from sl_app_pages.notesondataprep import notesondataprep_body
     from sl_app_pages.ML_page import run as machinelearning
+    from sl_app_pages.wordclouds import wordcloud_explorer
     from sl_app_pages.mod_page_calls import (
          mp1_intro,
          mp2_dataex,
@@ -30,6 +31,7 @@ def pagesetup():
     app.add_page("Articles by Character Counts\n and initial Classifications", mp2_dataex)
     app.add_page("Sentiment Analysis", mp3_datapre)
     app.add_page("Review of Shared\n Words and Phrases", mp4_datapre)
+    app.add_page("WordCloud Explorer", wordcloud_explorer)
     app.add_page("Real or Dubious Article Checker", machinelearning)
     app.add_page("Map of Analysed Articles", interactive_map)
     app.add_page("Notes on Data\n and Manipulations", notesondataprep_body)
