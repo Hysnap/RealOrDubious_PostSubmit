@@ -28,7 +28,7 @@ try:
     from sl_utils.logger import streamlit_logger as logger
     from sl_data_for_dashboard.data_load import (dashboarddata,
                                                  mapdata,
-                                                 wordcountdata)
+                                                 )
 except ImportError as e:
     raise SystemExit(f"Error: Failed to import modules - {e}")
 

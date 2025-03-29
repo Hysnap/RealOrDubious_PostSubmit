@@ -237,5 +237,6 @@ def display_maps():
     title_text = f'Article Mentions ({geo_level} level) (From {start_date.strftime("%Y-%m")} to {end_date.strftime("%Y-%m")})'
     Title.markdown(f"### {title_text}")
 
+
 if __name__ == "__main__":
     display_maps()

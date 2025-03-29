@@ -10,7 +10,6 @@ class MultiPage:
         self.pages = []  # List to store the pages
         self.app_name = app_name  # Name of the app
 
-
     # Method to add a new page to the app
     def add_page(self, title, func) -> None:
         self.pages.append({"title": title, "function": func})

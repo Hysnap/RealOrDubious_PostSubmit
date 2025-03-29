@@ -27,7 +27,8 @@ def pagesetup():
 
     app.add_page("Introduction", introduction_body)
     app.add_page("Objective and Requirements", mp1_intro)
-    app.add_page("Articles by Character Counts\n and initial Classifications", mp2_dataex)
+    app.add_page("Articles by Character Counts\n and initial Classifications",
+                 mp2_dataex)
     app.add_page("Sentiment Analysis", mp3_datapre)
     app.add_page("WordCloud Explorer", wordcloud_explorer)
     app.add_page("Real or Dubious Article Checker", machinelearning)

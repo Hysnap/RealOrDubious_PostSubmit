@@ -28283,3 +28283,1239 @@ For more information refer to the [docs](https://docs.streamlit.io/develop/api-r
 2025/03/29 04:40 INFO:pagesetup executed successfully
 2025/03/29 04:40 INFO:Menu setup completed successfully.
 2025/03/29 04:40 INFO:App is fully loaded and ready!
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:Streamlit App Starting...
+2025/03/29 04:45 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:45 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:45 INFO:Running App setup...
+2025/03/29 04:45 INFO:Setting up the package
+2025/03/29 04:45 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:Version: v0.16
+2025/03/29 04:45 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:45 INFO:Session_state variables initialized
+2025/03/29 04:45 INFO:Session state Setup complete
+2025/03/29 04:45 INFO:initialize_session_state executed successfully
+2025/03/29 04:45 INFO:Package setup complete
+2025/03/29 04:45 INFO:setup_package executed successfully
+2025/03/29 04:45 INFO:Setup completed successfully.
+2025/03/29 04:45 INFO:Running Menu setup...
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:get_git_version executed successfully
+2025/03/29 04:45 INFO:App Version: v0.16
+2025/03/29 04:45 INFO:Switched to page: Introduction
+2025/03/29 04:45 INFO:pagesetup executed successfully
+2025/03/29 04:45 INFO:Menu setup completed successfully.
+2025/03/29 04:45 INFO:App is fully loaded and ready!
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:Streamlit App Starting...
+2025/03/29 04:49 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:49 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:49 INFO:Running App setup...
+2025/03/29 04:49 INFO:Setting up the package
+2025/03/29 04:49 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:Version: v0.16
+2025/03/29 04:49 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:49 INFO:Session_state variables initialized
+2025/03/29 04:49 INFO:Session state Setup complete
+2025/03/29 04:49 INFO:initialize_session_state executed successfully
+2025/03/29 04:49 INFO:Package setup complete
+2025/03/29 04:49 INFO:setup_package executed successfully
+2025/03/29 04:49 INFO:Setup completed successfully.
+2025/03/29 04:49 INFO:Running Menu setup...
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:get_git_version executed successfully
+2025/03/29 04:49 INFO:App Version: v0.16
+2025/03/29 04:49 INFO:Switched to page: Introduction
+2025/03/29 04:49 INFO:pagesetup executed successfully
+2025/03/29 04:49 INFO:Menu setup completed successfully.
+2025/03/29 04:49 INFO:App is fully loaded and ready!
+2025/03/29 04:56 INFO:Streamlit App Starting...
+2025/03/29 04:56 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:56 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:56 INFO:Running App setup...
+2025/03/29 04:56 INFO:Setting up the package
+2025/03/29 04:56 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:56 INFO:get_git_version executed successfully
+2025/03/29 04:56 INFO:Version: v0.16
+2025/03/29 04:56 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:56 INFO:Session_state variables initialized
+2025/03/29 04:56 INFO:Session state Setup complete
+2025/03/29 04:56 INFO:initialize_session_state executed successfully
+2025/03/29 04:56 INFO:Package setup complete
+2025/03/29 04:56 INFO:setup_package executed successfully
+2025/03/29 04:56 INFO:Setup completed successfully.
+2025/03/29 04:56 INFO:Running Menu setup...
+2025/03/29 04:56 INFO:get_git_version executed successfully
+2025/03/29 04:56 INFO:App Version: v0.16
+2025/03/29 04:56 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 04:56 ERROR:Error in display_maps: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:56 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:57 INFO:Streamlit App Starting...
+2025/03/29 04:57 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:57 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:57 INFO:Running App setup...
+2025/03/29 04:57 INFO:Setting up the package
+2025/03/29 04:57 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:57 INFO:get_git_version executed successfully
+2025/03/29 04:57 INFO:Version: v0.16
+2025/03/29 04:57 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:57 INFO:Session_state variables initialized
+2025/03/29 04:57 INFO:Session state Setup complete
+2025/03/29 04:57 INFO:initialize_session_state executed successfully
+2025/03/29 04:57 INFO:Package setup complete
+2025/03/29 04:57 INFO:setup_package executed successfully
+2025/03/29 04:57 INFO:Setup completed successfully.
+2025/03/29 04:57 INFO:Running Menu setup...
+2025/03/29 04:57 INFO:get_git_version executed successfully
+2025/03/29 04:57 INFO:App Version: v0.16
+2025/03/29 04:57 INFO:Switched to page: Introduction
+2025/03/29 04:57 INFO:pagesetup executed successfully
+2025/03/29 04:57 INFO:Menu setup completed successfully.
+2025/03/29 04:57 INFO:App is fully loaded and ready!
+2025/03/29 04:57 INFO:Streamlit App Starting...
+2025/03/29 04:57 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:57 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:57 INFO:Running App setup...
+2025/03/29 04:57 INFO:Setting up the package
+2025/03/29 04:57 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:57 INFO:get_git_version executed successfully
+2025/03/29 04:57 INFO:Version: v0.16
+2025/03/29 04:57 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:57 INFO:Session_state variables initialized
+2025/03/29 04:57 INFO:Session state Setup complete
+2025/03/29 04:57 INFO:initialize_session_state executed successfully
+2025/03/29 04:57 INFO:Package setup complete
+2025/03/29 04:57 INFO:setup_package executed successfully
+2025/03/29 04:57 INFO:Setup completed successfully.
+2025/03/29 04:57 INFO:Running Menu setup...
+2025/03/29 04:57 INFO:get_git_version executed successfully
+2025/03/29 04:57 INFO:App Version: v0.16
+2025/03/29 04:57 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 04:57 ERROR:Error in display_maps: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:57 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Introduction
+2025/03/29 04:58 INFO:pagesetup executed successfully
+2025/03/29 04:58 INFO:Menu setup completed successfully.
+2025/03/29 04:58 INFO:App is fully loaded and ready!
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 04:58 ERROR:Error in display_maps: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:58 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Real or Dubious Article Checker
+2025/03/29 04:58 INFO:pagesetup executed successfully
+2025/03/29 04:58 INFO:Menu setup completed successfully.
+2025/03/29 04:58 INFO:App is fully loaded and ready!
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Notes on Data
+ and Manipulations
+2025/03/29 04:58 INFO:notesondataprep_body executed successfully
+2025/03/29 04:58 INFO:pagesetup executed successfully
+2025/03/29 04:58 INFO:Menu setup completed successfully.
+2025/03/29 04:58 INFO:App is fully loaded and ready!
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 04:58 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Real or Dubious Article Checker
+2025/03/29 04:58 INFO:pagesetup executed successfully
+2025/03/29 04:58 INFO:Menu setup completed successfully.
+2025/03/29 04:58 INFO:App is fully loaded and ready!
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: WordCloud Explorer
+2025/03/29 04:58 INFO:pagesetup executed successfully
+2025/03/29 04:58 INFO:Menu setup completed successfully.
+2025/03/29 04:58 INFO:App is fully loaded and ready!
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Sentiment Analysis
+2025/03/29 04:58 INFO:load_page_settings executed successfully
+2025/03/29 04:58 INFO:Successfully imported plot_article_vs_title_polarity from sl_visualisations.polarity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_article_vs_title_subjectivity from sl_visualisations.subjectivity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_title_subjectivity_vs_polarity from sl_visualisations.subjectivity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_article_subjectivity_vs_polarity from sl_visualisations.subjectivity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_polarity_contrad_variations from sl_visualisations.polarity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_subjectivity_contrad_variations from sl_visualisations.subjectivity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_polarity_subjectivity_boxplots from sl_visualisations.boxplot_visuals
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: After extracting the data, dealing with missing data and duplicates, several new measures were created to support understanding.  Two of these were Polarity and Subjectivity - these are two measures calculated using TextBlob's data analytics models.  Polarity measures how Postive or Negative a section of text is ranging from -1 very negative to 1 very positive.  The polarity score for the title and text of each article were calculated and then compared.  Subjectivity is a measure of how objective (evidence based) or subjective (emotion based) a piece of text is.  It is represented as a score between 0 very objective to 1 very subjective, again the scores for both the title and text were calculated and analysed.  Then the difference/contradictiveness of sentiments between the title and text were compared as well as the degree of variance between their relative polarities and subjectivities.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: The visualisation below compared the polarity of the Title of an article to that of the main text and distinguishes articles that are Real or Dubious.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.polarity_refactor.plot_article_vs_title_polarity
+2025/03/29 04:58 INFO:plot_article_vs_title_polarity executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_article_vs_title_polarity
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_article_vs_title_polarity
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: sl_The visualisation below does the same for Subjectivity.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity
+2025/03/29 04:58 INFO:plot_article_vs_title_subjectivity executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: For reference on the left are the comparisons of the Titles Polarity vs Titles Subjectivity and the same for articles.  Then on the right we have a look at the contradictions in subjectivity vs polarity and the variances.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity
+2025/03/29 04:58 INFO:plot_title_subjectivity_vs_polarity executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity
+2025/03/29 04:58 INFO:plot_article_subjectivity_vs_polarity executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations
+2025/03/29 04:58 INFO:plot_subjectivity_contrad_variations executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.polarity_refactor.plot_polarity_contrad_variations
+2025/03/29 04:58 INFO:plot_polarity_contrad_variations executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_polarity_contrad_variations
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_polarity_contrad_variations
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: These box plots show the distribution of Polarity and Subjectivity scores for both the Title and the Article.  The Title is shown in blue and the Article in orange.  The box plots show the median, the interquartile range and the outliers.  The Title is generally more positive and less subjective than the Article.  The Article has a wider range of scores and more outliers.  The Title has a higher median score than the Article for both Polarity and Subjectivity.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots
+2025/03/29 04:58 INFO:Streamlit App Starting...
+2025/03/29 04:58 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 04:58 INFO:Running App setup...
+2025/03/29 04:58 INFO:Setting up the package
+2025/03/29 04:58 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:Version: v0.16
+2025/03/29 04:58 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 04:58 INFO:Session_state variables initialized
+2025/03/29 04:58 INFO:Session state Setup complete
+2025/03/29 04:58 INFO:initialize_session_state executed successfully
+2025/03/29 04:58 INFO:Package setup complete
+2025/03/29 04:58 INFO:setup_package executed successfully
+2025/03/29 04:58 INFO:Setup completed successfully.
+2025/03/29 04:58 INFO:Running Menu setup...
+2025/03/29 04:58 INFO:get_git_version executed successfully
+2025/03/29 04:58 INFO:App Version: v0.16
+2025/03/29 04:58 INFO:Switched to page: Articles by Character Counts
+ and initial Classifications
+2025/03/29 04:58 INFO:load_page_settings executed successfully
+2025/03/29 04:58 INFO:Successfully imported plot_article_vs_title_polarity from sl_visualisations.polarity_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_article_count_by_subject from sl_visualisations.article_count_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_article_count_by_source from sl_visualisations.article_count_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_article_vs_title_characters from sl_visualisations.other_visuals_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_article_count_by_media from sl_visualisations.article_count_refactor
+2025/03/29 04:58 INFO:Successfully imported plot_hex_charcounts from sl_visualisations.other_visuals_refactor
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed header: Topline Observations
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: During the EDA it was noticed that, several of the data columns available were biased. That is how they had been set meant that it was possible to identify Real or Dubious news solely by their content. The two main offenders of this were the Source Name - only Real articles had identified sources, and the category. Although the category appeared neutral at first glance, analysis showed that in fact Real articles received different categorization than Dubious news stories
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.article_count_refactor.plot_article_count_by_source
+2025/03/29 04:58 INFO:select_display_type executed successfully
+2025/03/29 04:58 INFO:plot_article_count_by_source executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_source
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_source
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: Now it is probably not surprising that Articles which quote their source, are almost always Real, especially if the source is a recognised agency.  The data alas has limited variation in the sources identified and as such potentially this should be an item for future investigation.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.article_count_refactor.plot_article_count_by_subject
+2025/03/29 04:58 INFO:plot_article_count_by_subject executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_subject
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_subject
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: As can be seen, there is a definite bias in the data.  With Dubious and Real news articles being classified differently.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: The first analysis undertaken after a look at the neutrality of the data, was to see if the number of characters in the Title or Article could be an indicator of how Real an article was.  This did provide some interesting results.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters
+2025/03/29 04:58 INFO:plot_article_vs_title_characters executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: It is evident that Real news articles have a char length between X and Y, and the further the count is from this the greater the chance that the article is not real.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 WARNING:Skipping empty element of type text.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.article_count_refactor.plot_article_count_by_media
+2025/03/29 04:58 INFO:select_display_type executed successfully
+2025/03/29 04:58 INFO:plot_article_count_by_media executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_media
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_media
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: Articles that mention videos or pictures especially in the title, are more likely to be Dubious news.  The data was from 2014-2017, and as such also articles which referenced the key Social Media outlets is shown to be more likely Real.  It would be interesting to see how this has changed since several of these organisations have decreased on site fact checking.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed header: Number of Articles in the DataSet over time
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:Displayed text: A better presentation of the comparison of character counts in title and article by Real and Dubious news articles.
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:🔍 Attempting to execute visualization: sl_visualisations.other_visuals_refactor.plot_hex_charcounts
+2025/03/29 04:58 INFO:plot_hex_charcounts executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_hex_charcounts
+2025/03/29 04:58 INFO:execute_visualization executed successfully
+2025/03/29 04:58 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_hex_charcounts
+2025/03/29 04:58 INFO:execute_element_call executed successfully
+2025/03/29 04:58 INFO:display_page executed successfully
+2025/03/29 04:58 INFO:mp2_dataex executed successfully
+2025/03/29 04:58 INFO:pagesetup executed successfully
+2025/03/29 04:58 INFO:Menu setup completed successfully.
+2025/03/29 04:58 INFO:App is fully loaded and ready!
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:Streamlit App Starting...
+2025/03/29 07:13 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:13 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:13 INFO:Running App setup...
+2025/03/29 07:13 INFO:Setting up the package
+2025/03/29 07:13 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:Version: v0.16
+2025/03/29 07:13 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:13 INFO:Session_state variables initialized
+2025/03/29 07:13 INFO:Session state Setup complete
+2025/03/29 07:13 INFO:initialize_session_state executed successfully
+2025/03/29 07:13 INFO:Package setup complete
+2025/03/29 07:13 INFO:setup_package executed successfully
+2025/03/29 07:13 INFO:Setup completed successfully.
+2025/03/29 07:13 INFO:Running Menu setup...
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:App Version: v0.16
+2025/03/29 07:13 INFO:Switched to page: Introduction
+2025/03/29 07:13 INFO:pagesetup executed successfully
+2025/03/29 07:13 INFO:Menu setup completed successfully.
+2025/03/29 07:13 INFO:App is fully loaded and ready!
+2025/03/29 07:13 INFO:Streamlit App Starting...
+2025/03/29 07:13 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:13 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:13 INFO:Running App setup...
+2025/03/29 07:13 INFO:Setting up the package
+2025/03/29 07:13 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:Version: v0.16
+2025/03/29 07:13 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:13 INFO:Session_state variables initialized
+2025/03/29 07:13 INFO:Session state Setup complete
+2025/03/29 07:13 INFO:initialize_session_state executed successfully
+2025/03/29 07:13 INFO:Package setup complete
+2025/03/29 07:13 INFO:setup_package executed successfully
+2025/03/29 07:13 INFO:Setup completed successfully.
+2025/03/29 07:13 INFO:Running Menu setup...
+2025/03/29 07:13 INFO:get_git_version executed successfully
+2025/03/29 07:13 INFO:App Version: v0.16
+2025/03/29 07:13 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 07:13 ERROR:Error in display_maps: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 07:13 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 07:20 INFO:Streamlit App Starting...
+2025/03/29 07:20 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:20 INFO:Running App setup...
+2025/03/29 07:20 INFO:Setting up the package
+2025/03/29 07:20 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:get_git_version executed successfully
+2025/03/29 07:20 INFO:Version: v0.16
+2025/03/29 07:20 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:Session_state variables initialized
+2025/03/29 07:20 INFO:Session state Setup complete
+2025/03/29 07:20 INFO:initialize_session_state executed successfully
+2025/03/29 07:20 INFO:Package setup complete
+2025/03/29 07:20 INFO:setup_package executed successfully
+2025/03/29 07:20 INFO:Setup completed successfully.
+2025/03/29 07:20 INFO:Running Menu setup...
+2025/03/29 07:20 INFO:get_git_version executed successfully
+2025/03/29 07:20 INFO:App Version: v0.16
+2025/03/29 07:20 INFO:Switched to page: Real or Dubious Article Checker
+2025/03/29 07:20 INFO:pagesetup executed successfully
+2025/03/29 07:20 INFO:Menu setup completed successfully.
+2025/03/29 07:20 INFO:App is fully loaded and ready!
+2025/03/29 07:20 INFO:Streamlit App Starting...
+2025/03/29 07:20 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:20 INFO:Running App setup...
+2025/03/29 07:20 INFO:Setting up the package
+2025/03/29 07:20 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:get_git_version executed successfully
+2025/03/29 07:20 INFO:Version: v0.16
+2025/03/29 07:20 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:Session_state variables initialized
+2025/03/29 07:20 INFO:Session state Setup complete
+2025/03/29 07:20 INFO:initialize_session_state executed successfully
+2025/03/29 07:20 INFO:Package setup complete
+2025/03/29 07:20 INFO:setup_package executed successfully
+2025/03/29 07:20 INFO:Setup completed successfully.
+2025/03/29 07:20 INFO:Running Menu setup...
+2025/03/29 07:20 INFO:get_git_version executed successfully
+2025/03/29 07:20 INFO:App Version: v0.16
+2025/03/29 07:20 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 07:20 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 07:20 INFO:Streamlit App Starting...
+2025/03/29 07:20 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:20 INFO:Running App setup...
+2025/03/29 07:20 INFO:Setting up the package
+2025/03/29 07:20 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:get_git_version executed successfully
+2025/03/29 07:20 INFO:Version: v0.16
+2025/03/29 07:20 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:20 INFO:Session_state variables initialized
+2025/03/29 07:20 INFO:Session state Setup complete
+2025/03/29 07:20 INFO:initialize_session_state executed successfully
+2025/03/29 07:20 INFO:Package setup complete
+2025/03/29 07:20 INFO:setup_package executed successfully
+2025/03/29 07:20 INFO:Setup completed successfully.
+2025/03/29 07:20 INFO:Running Menu setup...
+2025/03/29 07:20 INFO:get_git_version executed successfully
+2025/03/29 07:20 INFO:App Version: v0.16
+2025/03/29 07:20 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 07:20 CRITICAL:Menu setup crashed: 'RuntimeError' object is not subscriptable
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 40, in pagesetup
+    app.run()  # Run the  app
+    ^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\multi_page.py", line 43, in run
+    page["function"]()  # Run the selected page's function
+    ^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py", line 75, in interactive_map
+    display_maps()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\sl_visualisations\map_visualisation.py", line 21, in display_maps
+    articles["date"] = pd.to_datetime(articles["date"], errors='coerce')
+                                      ~~~~~~~~^^^^^^^^
+TypeError: 'RuntimeError' object is not subscriptable
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 INFO:Streamlit App Starting...
+2025/03/29 07:22 INFO:Streamlit App Starting...
+2025/03/29 07:22 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:22 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:22 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:22 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:22 INFO:Running App setup...
+2025/03/29 07:22 INFO:Running App setup...
+2025/03/29 07:22 INFO:Setting up the package
+2025/03/29 07:22 INFO:Setting up the package
+2025/03/29 07:22 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:22 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 INFO:Version: v0.16
+2025/03/29 07:22 INFO:Version: v0.16
+2025/03/29 07:22 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:22 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:22 INFO:Session_state variables initialized
+2025/03/29 07:22 INFO:Session state Setup complete
+2025/03/29 07:22 INFO:Session_state variables initialized
+2025/03/29 07:22 INFO:initialize_session_state executed successfully
+2025/03/29 07:22 INFO:Session state Setup complete
+2025/03/29 07:22 INFO:Package setup complete
+2025/03/29 07:22 INFO:initialize_session_state executed successfully
+2025/03/29 07:22 INFO:setup_package executed successfully
+2025/03/29 07:22 INFO:Package setup complete
+2025/03/29 07:22 INFO:Setup completed successfully.
+2025/03/29 07:22 INFO:setup_package executed successfully
+2025/03/29 07:22 INFO:Setup completed successfully.
+2025/03/29 07:22 INFO:Running Menu setup...
+2025/03/29 07:22 INFO:Running Menu setup...
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 INFO:get_git_version executed successfully
+2025/03/29 07:22 ERROR:Error in pagesetup: cannot import name 'mp1_intro' from 'sl_app_pages.mod_page_calls' (H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py)
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 14, in pagesetup
+    from sl_app_pages.mod_page_calls import (
+ImportError: cannot import name 'mp1_intro' from 'sl_app_pages.mod_page_calls' (H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py)
+2025/03/29 07:22 CRITICAL:Menu setup crashed: cannot import name 'mp1_intro' from 'sl_app_pages.mod_page_calls' (H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py)
+Traceback (most recent call last):
+  File "H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py", line 85, in <module>
+    ROD_menu.pagesetup()
+  File "H:\VScode\real-or-dubious-main\sl_utils\logger.py", line 64, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "H:\VScode\real-or-dubious-main\ROD_menu.py", line 14, in pagesetup
+    from sl_app_pages.mod_page_calls import (
+ImportError: cannot import name 'mp1_intro' from 'sl_app_pages.mod_page_calls' (H:\VScode\real-or-dubious-main\sl_app_pages\mod_page_calls.py)
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:Streamlit App Starting...
+2025/03/29 07:25 INFO:Streamlit App Starting...
+2025/03/29 07:25 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:25 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:25 INFO:Running App setup...
+2025/03/29 07:25 INFO:Running App setup...
+2025/03/29 07:25 INFO:Setting up the package
+2025/03/29 07:25 INFO:Setting up the package
+2025/03/29 07:25 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:Version: v0.16
+2025/03/29 07:25 INFO:Version: v0.16
+2025/03/29 07:25 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Session_state variables initialized
+2025/03/29 07:25 INFO:Session_state variables initialized
+2025/03/29 07:25 INFO:Session state Setup complete
+2025/03/29 07:25 INFO:Session state Setup complete
+2025/03/29 07:25 INFO:initialize_session_state executed successfully
+2025/03/29 07:25 INFO:initialize_session_state executed successfully
+2025/03/29 07:25 INFO:Package setup complete
+2025/03/29 07:25 INFO:Package setup complete
+2025/03/29 07:25 INFO:setup_package executed successfully
+2025/03/29 07:25 INFO:setup_package executed successfully
+2025/03/29 07:25 INFO:Setup completed successfully.
+2025/03/29 07:25 INFO:Setup completed successfully.
+2025/03/29 07:25 INFO:Running Menu setup...
+2025/03/29 07:25 INFO:Running Menu setup...
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:App Version: v0.16
+2025/03/29 07:25 INFO:App Version: v0.16
+2025/03/29 07:25 INFO:Switched to page: Introduction
+2025/03/29 07:25 INFO:Switched to page: Introduction
+2025/03/29 07:25 INFO:pagesetup executed successfully
+2025/03/29 07:25 INFO:Menu setup completed successfully.
+2025/03/29 07:25 INFO:App is fully loaded and ready!
+2025/03/29 07:25 INFO:pagesetup executed successfully
+2025/03/29 07:25 INFO:Menu setup completed successfully.
+2025/03/29 07:25 INFO:App is fully loaded and ready!
+2025/03/29 07:25 INFO:Streamlit App Starting...
+2025/03/29 07:25 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:25 INFO:Running App setup...
+2025/03/29 07:25 INFO:Setting up the package
+2025/03/29 07:25 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:Version: v0.16
+2025/03/29 07:25 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Session_state variables initialized
+2025/03/29 07:25 INFO:Session state Setup complete
+2025/03/29 07:25 INFO:initialize_session_state executed successfully
+2025/03/29 07:25 INFO:Package setup complete
+2025/03/29 07:25 INFO:setup_package executed successfully
+2025/03/29 07:25 INFO:Setup completed successfully.
+2025/03/29 07:25 INFO:Running Menu setup...
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:App Version: v0.16
+2025/03/29 07:25 INFO:Switched to page: Objective and Requirements
+2025/03/29 07:25 INFO:load_page_settings executed successfully
+2025/03/29 07:25 ERROR:Failed to import Nothing.nothing: No module named 'Nothing'
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: To help with the design of the dashboard, two personas were created on ChatGPT to help with requirements gathering, one was Joe Bloggs a member of the public and the other was Julia Dempsey an IT and Data Reporter who is commissioning the dashboard and liaising with IT.  It then responded back based on what was achievable in the time limit and with the available data.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:display_page executed successfully
+2025/03/29 07:25 INFO:mp1_intro executed successfully
+2025/03/29 07:25 INFO:pagesetup executed successfully
+2025/03/29 07:25 INFO:Menu setup completed successfully.
+2025/03/29 07:25 INFO:App is fully loaded and ready!
+2025/03/29 07:25 INFO:Streamlit App Starting...
+2025/03/29 07:25 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:25 INFO:Running App setup...
+2025/03/29 07:25 INFO:Setting up the package
+2025/03/29 07:25 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:Version: v0.16
+2025/03/29 07:25 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Session_state variables initialized
+2025/03/29 07:25 INFO:Session state Setup complete
+2025/03/29 07:25 INFO:initialize_session_state executed successfully
+2025/03/29 07:25 INFO:Package setup complete
+2025/03/29 07:25 INFO:setup_package executed successfully
+2025/03/29 07:25 INFO:Setup completed successfully.
+2025/03/29 07:25 INFO:Running Menu setup...
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:App Version: v0.16
+2025/03/29 07:25 INFO:Switched to page: Articles by Character Counts
+ and initial Classifications
+2025/03/29 07:25 INFO:load_page_settings executed successfully
+2025/03/29 07:25 INFO:Successfully imported plot_article_vs_title_polarity from sl_visualisations.polarity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_article_count_by_subject from sl_visualisations.article_count_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_article_count_by_source from sl_visualisations.article_count_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_article_vs_title_characters from sl_visualisations.other_visuals_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_article_count_by_media from sl_visualisations.article_count_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_hex_charcounts from sl_visualisations.other_visuals_refactor
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed header: Topline Observations
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: During the EDA it was noticed that, several of the data columns available were biased. That is how they had been set meant that it was possible to identify Real or Dubious news solely by their content. The two main offenders of this were the Source Name - only Real articles had identified sources, and the category. Although the category appeared neutral at first glance, analysis showed that in fact Real articles received different categorization than Dubious news stories
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.article_count_refactor.plot_article_count_by_source
+2025/03/29 07:25 INFO:select_display_type executed successfully
+2025/03/29 07:25 INFO:plot_article_count_by_source executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_source
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_source
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: Now it is probably not surprising that Articles which quote their source, are almost always Real, especially if the source is a recognised agency.  The data alas has limited variation in the sources identified and as such potentially this should be an item for future investigation.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.article_count_refactor.plot_article_count_by_subject
+2025/03/29 07:25 INFO:plot_article_count_by_subject executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_subject
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_subject
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: As can be seen, there is a definite bias in the data.  With Dubious and Real news articles being classified differently.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: The first analysis undertaken after a look at the neutrality of the data, was to see if the number of characters in the Title or Article could be an indicator of how Real an article was.  This did provide some interesting results.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters
+2025/03/29 07:25 INFO:plot_article_vs_title_characters executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: It is evident that Real news articles have a char length between X and Y, and the further the count is from this the greater the chance that the article is not real.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.article_count_refactor.plot_article_count_by_media
+2025/03/29 07:25 INFO:select_display_type executed successfully
+2025/03/29 07:25 INFO:plot_article_count_by_media executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_media
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.article_count_refactor.plot_article_count_by_media
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: Articles that mention videos or pictures especially in the title, are more likely to be Dubious news.  The data was from 2014-2017, and as such also articles which referenced the key Social Media outlets is shown to be more likely Real.  It would be interesting to see how this has changed since several of these organisations have decreased on site fact checking.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed header: Number of Articles in the DataSet over time
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: A better presentation of the comparison of character counts in title and article by Real and Dubious news articles.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.other_visuals_refactor.plot_hex_charcounts
+2025/03/29 07:25 INFO:plot_hex_charcounts executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_hex_charcounts
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.other_visuals_refactor.plot_hex_charcounts
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:display_page executed successfully
+2025/03/29 07:25 INFO:mp2_dataex executed successfully
+2025/03/29 07:25 INFO:pagesetup executed successfully
+2025/03/29 07:25 INFO:Menu setup completed successfully.
+2025/03/29 07:25 INFO:App is fully loaded and ready!
+2025/03/29 07:25 INFO:Streamlit App Starting...
+2025/03/29 07:25 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:25 INFO:Running App setup...
+2025/03/29 07:25 INFO:Setting up the package
+2025/03/29 07:25 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:Version: v0.16
+2025/03/29 07:25 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Session_state variables initialized
+2025/03/29 07:25 INFO:Session state Setup complete
+2025/03/29 07:25 INFO:initialize_session_state executed successfully
+2025/03/29 07:25 INFO:Package setup complete
+2025/03/29 07:25 INFO:setup_package executed successfully
+2025/03/29 07:25 INFO:Setup completed successfully.
+2025/03/29 07:25 INFO:Running Menu setup...
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:App Version: v0.16
+2025/03/29 07:25 INFO:Switched to page: Sentiment Analysis
+2025/03/29 07:25 INFO:load_page_settings executed successfully
+2025/03/29 07:25 INFO:Successfully imported plot_article_vs_title_polarity from sl_visualisations.polarity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_article_vs_title_subjectivity from sl_visualisations.subjectivity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_title_subjectivity_vs_polarity from sl_visualisations.subjectivity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_article_subjectivity_vs_polarity from sl_visualisations.subjectivity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_polarity_contrad_variations from sl_visualisations.polarity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_subjectivity_contrad_variations from sl_visualisations.subjectivity_refactor
+2025/03/29 07:25 INFO:Successfully imported plot_polarity_subjectivity_boxplots from sl_visualisations.boxplot_visuals
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: After extracting the data, dealing with missing data and duplicates, several new measures were created to support understanding.  Two of these were Polarity and Subjectivity - these are two measures calculated using TextBlob's data analytics models.  Polarity measures how Postive or Negative a section of text is ranging from -1 very negative to 1 very positive.  The polarity score for the title and text of each article were calculated and then compared.  Subjectivity is a measure of how objective (evidence based) or subjective (emotion based) a piece of text is.  It is represented as a score between 0 very objective to 1 very subjective, again the scores for both the title and text were calculated and analysed.  Then the difference/contradictiveness of sentiments between the title and text were compared as well as the degree of variance between their relative polarities and subjectivities.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: The visualisation below compared the polarity of the Title of an article to that of the main text and distinguishes articles that are Real or Dubious.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.polarity_refactor.plot_article_vs_title_polarity
+2025/03/29 07:25 INFO:plot_article_vs_title_polarity executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_article_vs_title_polarity
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_article_vs_title_polarity
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: sl_The visualisation below does the same for Subjectivity.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity
+2025/03/29 07:25 INFO:plot_article_vs_title_subjectivity executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: For reference on the left are the comparisons of the Titles Polarity vs Titles Subjectivity and the same for articles.  Then on the right we have a look at the contradictions in subjectivity vs polarity and the variances.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity
+2025/03/29 07:25 INFO:plot_title_subjectivity_vs_polarity executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity
+2025/03/29 07:25 INFO:plot_article_subjectivity_vs_polarity executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 WARNING:Skipping empty element of type text.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations
+2025/03/29 07:25 INFO:plot_subjectivity_contrad_variations executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.polarity_refactor.plot_polarity_contrad_variations
+2025/03/29 07:25 INFO:plot_polarity_contrad_variations executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_polarity_contrad_variations
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.polarity_refactor.plot_polarity_contrad_variations
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:Displayed text: These box plots show the distribution of Polarity and Subjectivity scores for both the Title and the Article.  The Title is shown in blue and the Article in orange.  The box plots show the median, the interquartile range and the outliers.  The Title is generally more positive and less subjective than the Article.  The Article has a wider range of scores and more outliers.  The Title has a higher median score than the Article for both Polarity and Subjectivity.
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:🔍 Attempting to execute visualization: sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots
+2025/03/29 07:25 INFO:plot_polarity_subjectivity_boxplots executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots
+2025/03/29 07:25 INFO:execute_visualization executed successfully
+2025/03/29 07:25 INFO:Successfully executed visualization: sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots
+2025/03/29 07:25 INFO:execute_element_call executed successfully
+2025/03/29 07:25 INFO:display_page executed successfully
+2025/03/29 07:25 INFO:mp3_datapre executed successfully
+2025/03/29 07:25 INFO:pagesetup executed successfully
+2025/03/29 07:25 INFO:Menu setup completed successfully.
+2025/03/29 07:25 INFO:App is fully loaded and ready!
+2025/03/29 07:25 INFO:Streamlit App Starting...
+2025/03/29 07:25 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:25 INFO:Running App setup...
+2025/03/29 07:25 INFO:Setting up the package
+2025/03/29 07:25 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:Version: v0.16
+2025/03/29 07:25 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:25 INFO:Session_state variables initialized
+2025/03/29 07:25 INFO:Session state Setup complete
+2025/03/29 07:25 INFO:initialize_session_state executed successfully
+2025/03/29 07:25 INFO:Package setup complete
+2025/03/29 07:25 INFO:setup_package executed successfully
+2025/03/29 07:25 INFO:Setup completed successfully.
+2025/03/29 07:25 INFO:Running Menu setup...
+2025/03/29 07:25 INFO:get_git_version executed successfully
+2025/03/29 07:25 INFO:App Version: v0.16
+2025/03/29 07:25 INFO:Switched to page: WordCloud Explorer
+2025/03/29 07:25 INFO:pagesetup executed successfully
+2025/03/29 07:25 INFO:Menu setup completed successfully.
+2025/03/29 07:25 INFO:App is fully loaded and ready!
+2025/03/29 07:26 INFO:Streamlit App Starting...
+2025/03/29 07:26 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:26 INFO:Running App setup...
+2025/03/29 07:26 INFO:Setting up the package
+2025/03/29 07:26 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:Version: v0.16
+2025/03/29 07:26 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:Session_state variables initialized
+2025/03/29 07:26 INFO:Session state Setup complete
+2025/03/29 07:26 INFO:initialize_session_state executed successfully
+2025/03/29 07:26 INFO:Package setup complete
+2025/03/29 07:26 INFO:setup_package executed successfully
+2025/03/29 07:26 INFO:Setup completed successfully.
+2025/03/29 07:26 INFO:Running Menu setup...
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:App Version: v0.16
+2025/03/29 07:26 INFO:Switched to page: Real or Dubious Article Checker
+2025/03/29 07:26 INFO:pagesetup executed successfully
+2025/03/29 07:26 INFO:Menu setup completed successfully.
+2025/03/29 07:26 INFO:App is fully loaded and ready!
+2025/03/29 07:26 INFO:Streamlit App Starting...
+2025/03/29 07:26 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:26 INFO:Running App setup...
+2025/03/29 07:26 INFO:Setting up the package
+2025/03/29 07:26 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:Version: v0.16
+2025/03/29 07:26 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:Session_state variables initialized
+2025/03/29 07:26 INFO:Session state Setup complete
+2025/03/29 07:26 INFO:initialize_session_state executed successfully
+2025/03/29 07:26 INFO:Package setup complete
+2025/03/29 07:26 INFO:setup_package executed successfully
+2025/03/29 07:26 INFO:Setup completed successfully.
+2025/03/29 07:26 INFO:Running Menu setup...
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:App Version: v0.16
+2025/03/29 07:26 INFO:Switched to page: Map of Analysed Articles
+2025/03/29 07:26 INFO:display_maps executed successfully
+2025/03/29 07:26 INFO:interactive_map executed successfully
+2025/03/29 07:26 INFO:pagesetup executed successfully
+2025/03/29 07:26 INFO:Menu setup completed successfully.
+2025/03/29 07:26 INFO:App is fully loaded and ready!
+2025/03/29 07:26 INFO:Streamlit App Starting...
+2025/03/29 07:26 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:26 INFO:Running App setup...
+2025/03/29 07:26 INFO:Setting up the package
+2025/03/29 07:26 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:Version: v0.16
+2025/03/29 07:26 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:Session_state variables initialized
+2025/03/29 07:26 INFO:Session state Setup complete
+2025/03/29 07:26 INFO:initialize_session_state executed successfully
+2025/03/29 07:26 INFO:Package setup complete
+2025/03/29 07:26 INFO:setup_package executed successfully
+2025/03/29 07:26 INFO:Setup completed successfully.
+2025/03/29 07:26 INFO:Running Menu setup...
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:App Version: v0.16
+2025/03/29 07:26 INFO:Switched to page: Notes on Data
+ and Manipulations
+2025/03/29 07:26 INFO:notesondataprep_body executed successfully
+2025/03/29 07:26 INFO:pagesetup executed successfully
+2025/03/29 07:26 INFO:Menu setup completed successfully.
+2025/03/29 07:26 INFO:App is fully loaded and ready!
+2025/03/29 07:26 INFO:Streamlit App Starting...
+2025/03/29 07:26 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/29 07:26 INFO:Running App setup...
+2025/03/29 07:26 INFO:Setting up the package
+2025/03/29 07:26 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:Version: v0.16
+2025/03/29 07:26 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/29 07:26 INFO:Session_state variables initialized
+2025/03/29 07:26 INFO:Session state Setup complete
+2025/03/29 07:26 INFO:initialize_session_state executed successfully
+2025/03/29 07:26 INFO:Package setup complete
+2025/03/29 07:26 INFO:setup_package executed successfully
+2025/03/29 07:26 INFO:Setup completed successfully.
+2025/03/29 07:26 INFO:Running Menu setup...
+2025/03/29 07:26 INFO:get_git_version executed successfully
+2025/03/29 07:26 INFO:App Version: v0.16
+2025/03/29 07:26 INFO:Switched to page: Introduction
+2025/03/29 07:26 INFO:pagesetup executed successfully
+2025/03/29 07:26 INFO:Menu setup completed successfully.
+2025/03/29 07:26 INFO:App is fully loaded and ready!

@@ -77,7 +77,7 @@ def dashboarddata():
         df["year"].astype(int).astype(str) + "-" +
         df["month_num"].astype(str).str.zfill(2) + "-01"
     )
-    
+
     return df
 
 
