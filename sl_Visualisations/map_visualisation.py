@@ -7,7 +7,7 @@ from sl_utils.logger import log_function_call
 def display_maps():
     import pandas as pd
     import streamlit as st
-    import plotly.graph_objects as go
+
     # Load dataset
     with st.spinner('Loading data...'):
         # try to get data from session state
@@ -87,9 +87,14 @@ def display_maps():
             location_mode = "USA-states"
             map_countries = False
 
+        @st.cache_data
+        def get_aggregated_data(df, start, end, group_col):
+            filtered = df[(df["date"] >= start) & (df["date"] <= end)]
+            grouped = filtered.groupby(group_col)[["fake_count", "real_count"]].sum().reset_index()
+            return grouped
+
         # **Aggregate Data by Country (Summing Fake and Real Articles)**
-        aggregated_data = filtered_data.groupby([group_col]).agg(
-            {"fake_count": "sum", "real_count": "sum"}).reset_index()
+        aggregated_data = get_aggregated_data(articles, start_date, end_date, group_col)
 
         if map_countries:
             country_mapping = (
@@ -112,11 +117,8 @@ def display_maps():
         # - Red = Fake-heavy
         # - Blue = Real-heavy
         # - Purple = Balanced mix
-        aggregated_data["merged_scale"] = aggregated_data.apply(
-            lambda row: row["fake_count"] / row["total_articles"]
-            if row["total_articles"] > 0 else 0.5,
-            axis=1
-        )
+        total = aggregated_data["total_articles"]
+        aggregated_data["merged_scale"] = aggregated_data["fake_count"].div(total).fillna(0.5)
 
         # **Option to Switch Between Absolute Count, Percentage, and Merged**
         display_mode = st.radio(
@@ -129,6 +131,7 @@ def display_maps():
         )
         st.markdown("</div>", unsafe_allow_html=True)
     with col2:
+        import plotly.graph_objects as go
         st.markdown("<div class='column-style'>", unsafe_allow_html=True)
         # **Create Choropleth Map**
         fig = go.Figure()
@@ -147,7 +150,7 @@ def display_maps():
                               len=0.65,
                               y=0.5,
                               thickness=15),
-                text=aggregated_data[['fake_count', 'real_count']],
+                text=[f"Fake: {f} | Real: {r}" for f, r in zip(aggregated_data["fake_count"], aggregated_data["real_count"])],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
                     'Fake Articles: %{z}<br>'
@@ -167,7 +170,7 @@ def display_maps():
                               len=0.65,
                               y=0.5,
                               thickness=15),
-                text=aggregated_data[['fake_count', 'real_count']],
+                text=[f"Fake: {f} | Real: {r}" for f, r in zip(aggregated_data["fake_count"], aggregated_data["real_count"])],
                 hovertemplate=(
                     '<b>%{location}</b><br>'
                     'Fake Articles: %{text[0]}<br>'
