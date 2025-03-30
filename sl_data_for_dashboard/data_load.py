@@ -81,20 +81,5 @@ def dashboarddata():
     return df
 
 
-@log_function_call(logger)
-def wordcountdata():
-    # Use low_memory=False to avoid dtype inference issues
-    df = pd.read_csv(
-        "sl_data_for_dashboard//ngram_summary_v1.zip",
-        compression='zip',
-        low_memory=False
-        )
-    logger.debug("The shape of the data is: ", df.shape)
-    logger.debug(df.head())
-
-    # load data in to wordcountdata
-    return df
-
-
 # Path: f_dashboard/data_prep.py
 # end of file

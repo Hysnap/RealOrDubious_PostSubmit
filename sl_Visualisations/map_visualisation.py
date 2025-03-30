@@ -1,12 +1,13 @@
-import pandas as pd
-import streamlit as st
-import plotly.graph_objects as go
+
 from sl_utils.logger import streamlit_logger
 from sl_utils.logger import log_function_call
 
 
 @log_function_call(streamlit_logger)
 def display_maps():
+    import pandas as pd
+    import streamlit as st
+    import plotly.graph_objects as go
     # Load dataset
     with st.spinner('Loading data...'):
         # try to get data from session state
