@@ -6,45 +6,45 @@ from sl_app_pages.modular_page import display_page
 from sl_app_pages.ML_page import run as load_model
 
 
-# login
-@log_function_call(logger)
-def loginpage():
-    # page_texts = load_page_text("login")
+# # login
+# @log_function_call(logger)
+# def loginpage():
+#     # page_texts = load_page_text("login")
 
-    if "is_admin" not in st.session_state:
-        st.session_state.security["is_admin"] = False
+#     if "is_admin" not in st.session_state:
+#         st.session_state.security["is_admin"] = False
 
-    if not st.session_state.security["is_admin"]:
-        st.subheader("Admin Login")
-        username = st.text_input("Username")
-        password = st.text_input("Password", type="password")
+#     if not st.session_state.security["is_admin"]:
+#         st.subheader("Admin Login")
+#         username = st.text_input("Username")
+#         password = st.text_input("Password", type="password")
 
-        if st.button("Login"):
-            if check_password(username, password):
-                st.session_state.security["is_admin"] = True
-                st.success("Login successful!")
-                logger.info("User is not logged in as admin.")
-            else:
-                st.error("Invalid username or password.")
-                st.success("You are not logged in as admin.")
-                logger.info("User is not logged in as admin.")
-    else:
-        st.warning("You are already logged in as admin.")
+#         if st.button("Login"):
+#             if check_password(username, password):
+#                 st.session_state.security["is_admin"] = True
+#                 st.success("Login successful!")
+#                 logger.info("User is not logged in as admin.")
+#             else:
+#                 st.error("Invalid username or password.")
+#                 st.success("You are not logged in as admin.")
+#                 logger.info("User is not logged in as admin.")
+#     else:
+#         st.warning("You are already logged in as admin.")
 
 
-# logout
-@log_function_call(logger)
-def logoutpage():
-    # page_texts = load_page_text("logout")
+# # logout
+# @log_function_call(logger)
+# def logoutpage():
+#     # page_texts = load_page_text("logout")
 
-    if "is_admin" not in st.session_state:
-        st.session_state.security["is_admin"] = False
+#     if "is_admin" not in st.session_state:
+#         st.session_state.security["is_admin"] = False
 
-    # Logout button
-    if st.session_state.security["is_admin"]:
-        if st.button("Logout"):
-            st.session_state.security["is_admin"] = False
-            st.success("Logout successful!")
+#     # Logout button
+#     if st.session_state.security["is_admin"]:
+#         if st.button("Logout"):
+#             st.session_state.security["is_admin"] = False
+#             st.success("Logout successful!")
 
 
 # modular page calls
@@ -63,9 +63,9 @@ def mp3_datapre():
     display_page("Data Preprocessing")
 
 
-# def mp3_map():
-#     from sl_visualisations.map_visualisation import display_maps
-#     display_maps()
+def mp3_map():
+    from sl_app_pages.map_visualisation import display_maps
+    display_maps()
 
 
 @log_function_call(logger)

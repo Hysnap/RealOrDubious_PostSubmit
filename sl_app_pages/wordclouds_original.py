@@ -73,8 +73,7 @@ def wordcloud_explorer():
                 None
             )
             with cols[idx]:
-                st.markdown(f"**{CATEGORY_LABELS.get(category_key,
-                            category_key)}**")
+                st.markdown(f"**{CATEGORY_LABELS.get(category_key, category_key)}**")
                 if match:
                     img_path = match["path"]
                     try:
@@ -102,8 +101,7 @@ def wordcloud_explorer():
                 None
             )
             with cols[idx]:
-                st.markdown(f"**{CATEGORY_LABELS.get(category_key,
-                            category_key)}**")
+                st.markdown(f"**{CATEGORY_LABELS.get(category_key, category_key)}**")
                 if match:
                     img_path = match["path"]
                     try:
