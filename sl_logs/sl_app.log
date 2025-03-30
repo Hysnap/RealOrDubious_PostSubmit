@@ -30206,3 +30206,121 @@ ImportError: cannot import name 'mp1_intro' from 'sl_app_pages.mod_page_calls' (
 2025/03/30 10:37 INFO:pagesetup executed successfully
 2025/03/30 10:37 INFO:Menu setup completed successfully.
 2025/03/30 10:37 INFO:App is fully loaded and ready!
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:Streamlit App Starting...
+2025/03/30 10:57 INFO:Streamlit App Starting...
+2025/03/30 10:57 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/30 10:57 INFO:Current Working Directory: H:\VScode\real-or-dubious-main
+2025/03/30 10:57 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/30 10:57 INFO:running H:\VScode\real-or-dubious-main, H:\VScode\real-or-dubious-main\Real_Or_Dubious_News.py
+2025/03/30 10:57 INFO:Running App setup...
+2025/03/30 10:57 INFO:Running App setup...
+2025/03/30 10:57 INFO:Setting up the package
+2025/03/30 10:57 INFO:Setting up the package
+2025/03/30 10:57 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/30 10:57 INFO:Module directory: H:\VScode\real-or-dubious-main
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:Version: v0.17
+2025/03/30 10:57 INFO:Version: v0.17
+2025/03/30 10:57 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/30 10:57 INFO:BASE_DIR: H:\VScode\real-or-dubious-main
+2025/03/30 10:57 INFO:Session_state variables initialized
+2025/03/30 10:57 INFO:Session_state variables initialized
+2025/03/30 10:57 INFO:Session state Setup complete
+2025/03/30 10:57 INFO:Session state Setup complete
+2025/03/30 10:57 INFO:initialize_session_state executed successfully
+2025/03/30 10:57 INFO:initialize_session_state executed successfully
+2025/03/30 10:57 INFO:Package setup complete
+2025/03/30 10:57 INFO:Package setup complete
+2025/03/30 10:57 INFO:setup_package executed successfully
+2025/03/30 10:57 INFO:setup_package executed successfully
+2025/03/30 10:57 INFO:Setup completed successfully.
+2025/03/30 10:57 INFO:Setup completed successfully.
+2025/03/30 10:57 INFO:Running Menu setup...
+2025/03/30 10:57 INFO:Running Menu setup...
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:get_git_version executed successfully
+2025/03/30 10:57 INFO:App Version: v0.17
+2025/03/30 10:57 INFO:App Version: v0.17
+2025/03/30 10:57 INFO:Switched to page: Objective and Requirements
+2025/03/30 10:57 INFO:Switched to page: Objective and Requirements
+2025/03/30 10:57 INFO:load_page_settings executed successfully
+2025/03/30 10:57 INFO:load_page_settings executed successfully
+2025/03/30 10:57 ERROR:Failed to import Nothing.nothing: No module named 'Nothing'
+2025/03/30 10:57 ERROR:Failed to import Nothing.nothing: No module named 'Nothing'
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:Displayed text: To help with the design of the dashboard, two personas were created on ChatGPT to help with requirements gathering, one was Joe Bloggs a member of the public and the other was Julia Dempsey an IT and Data Reporter who is commissioning the dashboard and liaising with IT.  It then responded back based on what was achievable in the time limit and with the available data.
+2025/03/30 10:57 INFO:Displayed text: To help with the design of the dashboard, two personas were created on ChatGPT to help with requirements gathering, one was Joe Bloggs a member of the public and the other was Julia Dempsey an IT and Data Reporter who is commissioning the dashboard and liaising with IT.  It then responded back based on what was achievable in the time limit and with the available data.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 WARNING:Skipping empty element of type text.
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:execute_element_call executed successfully
+2025/03/30 10:57 INFO:display_page executed successfully
+2025/03/30 10:57 INFO:display_page executed successfully
+2025/03/30 10:57 INFO:mp1_intro executed successfully
+2025/03/30 10:57 INFO:mp1_intro executed successfully
+2025/03/30 10:57 INFO:pagesetup executed successfully
+2025/03/30 10:57 INFO:pagesetup executed successfully
+2025/03/30 10:57 INFO:Menu setup completed successfully.
+2025/03/30 10:57 INFO:Menu setup completed successfully.
+2025/03/30 10:57 INFO:App is fully loaded and ready!
+2025/03/30 10:57 INFO:App is fully loaded and ready!

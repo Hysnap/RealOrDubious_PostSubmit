@@ -239,5 +239,5 @@ def display_maps():
     Title.markdown(f"### {title_text}")
 
 
-if __name__ == "__main__":
-    display_maps()
+# if __name__ == "__main__":
+#     display_maps()
