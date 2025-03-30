@@ -15,7 +15,7 @@ def pagesetup():
          mp1_intro,
          mp2_dataex,
          mp3_datapre,
-         # interactive_map,
+         interactive_map,
          loginpage,
          logoutpage,
         )
@@ -32,7 +32,7 @@ def pagesetup():
     app.add_page("Sentiment Analysis", mp3_datapre)
     app.add_page("WordCloud Explorer", wordcloud_explorer)
     app.add_page("Real or Dubious Article Checker", machinelearning)
-    # app.add_page("Map of Analysed Articles", interactive_map)
+    app.add_page("Map of Analysed Articles", interactive_map)
     app.add_page("Notes on Data\n and Manipulations", notesondataprep_body)
     app.add_page("Login", loginpage)
     app.add_page("Logout", logoutpage)
