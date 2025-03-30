@@ -63,9 +63,10 @@ def mp3_datapre():
     display_page("Data Preprocessing")
 
 
-def mp3_map():
-    from sl_visualisations.map_visualisation import display_maps
-    display_maps()
+# def mp3_map():
+#     from sl_visualisations.map_visualisation import display_maps
+#     display_maps()
+
 
 @log_function_call(logger)
 def machinelearning():

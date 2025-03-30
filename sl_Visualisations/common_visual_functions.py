@@ -75,7 +75,7 @@ def apply_date_filter(df,
 def select_display_type(key):
     return st.radio("Select Display Type",
                     options=["Count", "Percentage"],
-                    index=0,
+                    index=1,
                     key=key)
 
 
