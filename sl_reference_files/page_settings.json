@@ -80,12 +80,12 @@
   },
   "Data Exploration": {
     "required_elements": {
-      "Dashboard": "sl_visualisations.polarity_refactor.plot_article_vs_title_polarity",
-      "vis1": "sl_visualisations.article_count_refactor.plot_article_count_by_subject",
-      "vis2": "sl_visualisations.article_count_refactor.plot_article_count_by_source",
-      "vis3": "sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters",
-      "vis4": "sl_visualisations.article_count_refactor.plot_article_count_by_media",
-      "vis5": "sl_visualisations.other_visuals_refactor.plot_hex_charcounts"
+      "Dashboard": "sl_visual.polarity_refactor.plot_article_vs_title_polarity",
+      "vis1": "sl_visual.article_count_refactor.plot_article_count_by_subject",
+      "vis2": "sl_visual.article_count_refactor.plot_article_count_by_source",
+      "vis3": "sl_visual.other_visuals_refactor.plot_article_vs_title_characters",
+      "vis4": "sl_visual.article_count_refactor.plot_article_count_by_media",
+      "vis5": "sl_visual.other_visuals_refactor.plot_hex_charcounts"
     },
     "page_settings": {
       "title": "Data Exploration",
@@ -109,7 +109,7 @@
         },
         "Upper_left": {
           "type": "visualization",
-          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_source"
+          "content": "sl_visual.article_count_refactor.plot_article_count_by_source"
         },
         "Lower_right": {
           "type": "text",
@@ -117,7 +117,7 @@
         },
         "Upper_right": {
           "type": "visualization",
-          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_subject"
+          "content": "sl_visual.article_count_refactor.plot_article_count_by_subject"
         }
       },
       "tab2": {
@@ -131,7 +131,7 @@
         },
         "Upper_left": {
           "type": "visualization",
-          "content": "sl_visualisations.other_visuals_refactor.plot_article_vs_title_characters"
+          "content": "sl_visual.other_visuals_refactor.plot_article_vs_title_characters"
         },
         "Lower_left": {
           "type": "text",
@@ -139,7 +139,7 @@
         },
         "Upper_right": {
           "type": "visualization",
-          "content": "sl_visualisations.article_count_refactor.plot_article_count_by_media"
+          "content": "sl_visual.article_count_refactor.plot_article_count_by_media"
         },
         "Lower_right": {
           "type": "text",
@@ -157,7 +157,7 @@
         },
         "Visualizations": {
           "type": "visualization",
-          "content": "sl_visualisations.other_visuals_refactor.plot_hex_charcounts"
+          "content": "sl_visual.other_visuals_refactor.plot_hex_charcounts"
         }
       }
     }
@@ -245,7 +245,7 @@
         },
         "Visualizations": {
           "type": "visualization",
-          "content": "sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots"
+          "content": "sl_visual.boxplot_visuals.plot_polarity_subjectivity_boxplots"
         }
       }
     }
