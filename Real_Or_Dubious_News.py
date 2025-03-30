@@ -7,7 +7,8 @@ import os
 import sys
 import psutil
 
-print("Memory used on startup (MB):", psutil.Process().memory_info().rss / 1024 / 1024)
+print("Memory used on startup (MB):",
+      psutil.Process().memory_info().rss / 1024 / 1024)
 
 # Force root path to ensure sl_* modules resolve correctly
 project_root = os.path.dirname(os.path.abspath(__file__))
@@ -85,7 +86,8 @@ except Exception as e:
     logger.critical(f"Menu setup crashed: {e}", exc_info=True)
     st.error(f"Menu setup failed. Please check logs. {__name__}")
     raise SystemExit("Menu setup failed. Exiting.")
-print("Memory used on startup (MB):", psutil.Process().memory_info().rss / 1024 / 1024)
+print("Memory used on startup (MB):",
+      psutil.Process().memory_info().rss / 1024 / 1024)
 
 logger.info("App is fully loaded and ready!")
 # The app is now ready to be run.

@@ -8,7 +8,7 @@ def wordcloud_explorer():
     st.title("🧠 WordCloud Explorer (All Years)")
 
     # --- Configuration ---
-    STATIC_DIR = Path("static/wordclouds")  # Where images are now stored
+    IMAGE_DIR = Path("wordclouds")  # This should be at the root of your app
     CATEGORY_LABELS = {
         "real": "Real",
         "dubious": "Dubious",
@@ -25,7 +25,7 @@ def wordcloud_explorer():
     pattern = re.compile(r"wordcloud_(\w+)_([123])gram_(\d{4})\.png")
     cloud_data = []
 
-    for path in STATIC_DIR.glob("*.png"):
+    for path in IMAGE_DIR.glob("*.png"):
         match = pattern.match(path.name)
         if match:
             category, ngram, year = match.groups()
@@ -37,7 +37,7 @@ def wordcloud_explorer():
             })
 
     if not cloud_data:
-        st.error("❌ No word cloud images found in 'static/wordclouds/'")
+        st.error("❌ No word cloud images found in 'wordclouds/'")
         return
 
     # --- Sidebar controls ---
@@ -52,9 +52,9 @@ def wordcloud_explorer():
             format_func=lambda n: PHRASE_LABELS.get(n, f"{n}-word"),
             key="wordcloud_phrase_selector"
         )
-        word_limit = st.slider("Max Words (visual density only)", 10, 200, 100)
+        # word_limit = st.slider("Max Words (visual density only)", 10, 200, 100)
 
-    st.markdown(f"### Displaying: {PHRASE_LABELS[selected_ngram]} — Top {word_limit} Words")
+    st.markdown(f"### Displaying: {PHRASE_LABELS[selected_ngram]} — Top Words")
 
     # --- Display word clouds grouped by year ---
     for year in all_years:
@@ -74,18 +74,16 @@ def wordcloud_explorer():
                 st.markdown(f"**{CATEGORY_LABELS[category_key]}**")
                 if match:
                     img_path = match["path"]
-                    st.image(Image.open(img_path), use_container_width=True)
+                    public_url = f"/wordclouds/{img_path.name}"
 
-                    # Public URL for the browser to access
-                    public_url = f"/static/wordclouds/{img_path.name}"
-
-                    # Add link to view fullscreen
+                    # Clickable image that links to fullscreen version
                     st.markdown(
-                        f'<a href="{public_url}" target="_blank">🔍 Click to view fullscreen</a>',
+                        f"""
+                        <a href="{public_url}" target="_blank">
+                            <img src="{public_url}" style="width: 100%; border-radius: 4px; margin-bottom: 6px;" />
+                        </a>
+                        """,
                         unsafe_allow_html=True
                     )
                 else:
                     st.warning("Not found")
-
-    st.caption("Note: Word count limit is currently visual-only. Adjust during generation for stricter filtering.")
-

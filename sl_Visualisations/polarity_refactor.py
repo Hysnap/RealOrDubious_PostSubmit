@@ -23,7 +23,7 @@ def plot_article_vs_title_polarity(target_label="Article vs Title Polarity",
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 
@@ -52,7 +52,7 @@ def plot_title_vs_article_polarity(target_label="Title vs Article Polarity",
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 
@@ -81,7 +81,7 @@ def plot_polarity_contrad_variations(target_label="Polarity Contradiction vs Var
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 

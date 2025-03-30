@@ -22,7 +22,7 @@ def plot_article_vs_title_subjectivity(
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 
@@ -54,7 +54,7 @@ def plot_article_subjectivity_vs_polarity(
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 
@@ -86,7 +86,7 @@ def plot_title_subjectivity_vs_polarity(
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 
@@ -118,7 +118,7 @@ def plot_article_vs_title_subjectivity_scat(
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 
@@ -154,7 +154,7 @@ def plot_subjectivity_contrad_variations(
     mode = st.radio(
         "Select Coloring Mode:",
         options=["binary", "ratio"],
-        index=0,
+        index=1,
         key=f"{pageref_label}_mode"
         )
 

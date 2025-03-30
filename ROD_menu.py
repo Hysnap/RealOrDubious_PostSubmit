@@ -10,7 +10,7 @@ def pagesetup():
     from sl_app_pages.introduction import introduction_body
     from sl_app_pages.notesondataprep import notesondataprep_body
     from sl_app_pages.ML_page import run as machinelearning
-    from sl_app_pages.wordclouds import wordcloud_explorer
+    from sl_app_pages.wordclouds_original import wordcloud_explorer
     from sl_app_pages.mod_page_calls import (
          mp1_intro,
          mp2_dataex,

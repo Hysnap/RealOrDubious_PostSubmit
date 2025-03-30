@@ -224,7 +224,7 @@ def plot_hexbin_grid(df,
 
 def plotly_weighted_scatter(df, x, y, size, label_col,
                             title, xlabel, ylabel,
-                            mode="binary", max_size=40):
+                            mode="ratio", max_size=40):
     if df.empty:
         st.warning("No data available to display.")
         return
@@ -286,27 +286,27 @@ def plotly_weighted_scatter(df, x, y, size, label_col,
 
 # =============== Wordcloud Helpers ====================
 
-def get_cleaned_text(df, label=None):
-    if label is not None:
-        df = df[df["label"] == label]
-    return " ".join(df["text"].astype(str).str.lower().str.split().sum())
+# def get_cleaned_text(df, label=None):
+#     if label is not None:
+#         df = df[df["label"] == label]
+#     return " ".join(df["text"].astype(str).str.lower().str.split().sum())
 
 
-def generate_wordcloud(text, stop_words):
-    return WordCloud(width=800, height=400,
-                     background_color="white",
-                     stopwords=stop_words).generate(text)
+# def generate_wordcloud(text, stop_words):
+#     return WordCloud(width=800, height=400,
+#                      background_color="white",
+#                      stopwords=stop_words).generate(text)
 
 
-def display_wordcloud(wordcloud):
-    fig, ax = plt.subplots(figsize=(8, 4))
-    ax.imshow(wordcloud, interpolation="bilinear")
-    ax.axis("off")
-    st.pyplot(fig)
+# def display_wordcloud(wordcloud):
+#     fig, ax = plt.subplots(figsize=(8, 4))
+#     ax.imshow(wordcloud, interpolation="bilinear")
+#     ax.axis("off")
+#     st.pyplot(fig)
 
 
-def get_stopwords():
-    return set(stopwords.words("english"))
+# def get_stopwords():
+#     return set(stopwords.words("english"))
 
 # end of common_visual_functions.py
 # Path: sl_visualisations/common_visual_functions.py
