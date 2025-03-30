@@ -11,12 +11,16 @@ from sl_visualisations.common_visual_functions import (
 @log_function_call(streamlit_logger)
 def plot_article_count_by_subject(target_label="Article Count by Subject",
                                   pageref_label="article_subject_count"):
-    df = get_dataset_or_error(["subject", "label", "article_count"])
+    df = get_dataset_or_error(["subject",
+                               "label",
+                               "article_count"])
     if df is None:
         return
 
     display_type = select_display_type(pageref_label)
-    counts, y_value, y_label = prepare_counts(df, ["subject", "label"], display_type)
+    counts, y_value, y_label = prepare_counts(df,
+                                              ["subject", "label"],
+                                              display_type)
 
     plot_bar(
         data=counts,
@@ -37,7 +41,9 @@ def plot_article_count_by_source(target_label="Article Count by Source",
         return
 
     display_type = select_display_type(pageref_label)
-    counts, y_value, y_label = prepare_counts(df, ["source_name", "label"], display_type)
+    counts, y_value, y_label = prepare_counts(df,
+                                              ["source_name", "label"],
+                                              display_type)
 
     plot_bar(
         data=counts,
@@ -53,12 +59,16 @@ def plot_article_count_by_source(target_label="Article Count by Source",
 @log_function_call(streamlit_logger)
 def plot_article_count_by_media(target_label="Article Count by Media",
                                 pageref_label="article_media_count"):
-    df = get_dataset_or_error(["media_type", "label", "article_count"])
+    df = get_dataset_or_error(["media_type",
+                               "label",
+                               "article_count"])
     if df is None:
         return
 
     display_type = select_display_type(pageref_label)
-    counts, y_value, y_label = prepare_counts(df, ["media_type", "label"], display_type)
+    counts, y_value, y_label = prepare_counts(df,
+                                              ["media_type", "label"],
+                                              display_type)
     sorted_order = counts.groupby("media_type")[y_value].sum().sort_values(ascending=False).index
 
     plot_bar(
@@ -76,12 +86,16 @@ def plot_article_count_by_media(target_label="Article Count by Media",
 @log_function_call(streamlit_logger)
 def plot_article_count_by_day_label(target_label="Article Count by Day Label",
                                     pageref_label="article_day_count"):
-    df = get_dataset_or_error(["day_label", "label", "article_count"])
+    df = get_dataset_or_error(["day_label",
+                               "label",
+                               "article_count"])
     if df is None:
         return
 
     display_type = select_display_type(pageref_label)
-    counts, y_value, y_label = prepare_counts(df, ["day_label", "label"], display_type)
+    counts, y_value, y_label = prepare_counts(df,
+                                              ["day_label", "label"],
+                                              display_type)
 
     plot_bar(
         data=counts,
@@ -98,7 +112,10 @@ def plot_article_count_by_day_label(target_label="Article Count by Day Label",
 @log_function_call(streamlit_logger)
 def plot_article_count_by_day(target_label="Article Count by Day",
                               pageref_label="article_day_count2"):
-    df = get_dataset_or_error(["year", "month", "article_count", "label"])
+    df = get_dataset_or_error(["year",
+                               "month",
+                               "article_count",
+                               "label"])
     if df is None:
         return
 
@@ -109,7 +126,9 @@ def plot_article_count_by_day(target_label="Article Count by Day",
     df = df[df["date_clean"].dt.year >= 2015]
 
     display_type = select_display_type(pageref_label)
-    counts, y_value, y_label = prepare_counts(df, ["date_clean", "label"], display_type)
+    counts, y_value, y_label = prepare_counts(df,
+                                              ["date_clean", "label"],
+                                              display_type)
 
     plot_line(
         data=counts,
@@ -125,12 +144,17 @@ def plot_article_count_by_day(target_label="Article Count by Day",
 @log_function_call(streamlit_logger)
 def plot_article_count_by_location(target_label="Article Count by Location",
                                    pageref_label="article_location_count"):
-    df = get_dataset_or_error(["unique_location_count", "label", "article_count"])
+    df = get_dataset_or_error(["unique_location_count",
+                               "label",
+                               "article_count"])
     if df is None:
         return
 
     display_type = select_display_type(pageref_label)
-    counts, y_value, y_label = prepare_counts(df, ["unique_location_count", "label"], display_type)
+    counts, y_value, y_label = prepare_counts(df,
+                                              ["unique_location_count",
+                                               "label"],
+                                              display_type)
 
     plot_bar(
         data=counts,
