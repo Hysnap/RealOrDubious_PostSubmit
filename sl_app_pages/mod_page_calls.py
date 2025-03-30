@@ -3,7 +3,6 @@ from sl_reference_files.text_management import check_password
 from sl_utils.logger import streamlit_logger as logger  # Import the logger
 from sl_utils.logger import log_function_call  # Import decorator
 from sl_app_pages.modular_page import display_page
-from sl_visualisations.map_visualisation import display_maps
 from sl_app_pages.ML_page import run as load_model
 
 
@@ -64,10 +63,9 @@ def mp3_datapre():
     display_page("Data Preprocessing")
 
 
-@log_function_call(logger)
-def interactive_map():
+def mp3_map():
+    from sl_visualisations.map_visualisation import display_maps
     display_maps()
-
 
 @log_function_call(logger)
 def machinelearning():

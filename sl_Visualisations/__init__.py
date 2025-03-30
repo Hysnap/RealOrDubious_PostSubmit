@@ -12,6 +12,10 @@ __description__ = "Visualisations for the project."
 
 __all__ = []
 for _, module_name, _ in pkgutil.iter_modules(__path__):
-    module = importlib.import_module(f"{__name__}.{module_name}")
-    globals()[module_name] = module
-    __all__.append(module_name)
+    try:
+        module = importlib.import_module(f"{__name__}.{module_name}")
+        globals()[module_name] = module
+        __all__.append(module_name)
+    except Exception as e:
+        print(f"WARNING: Could not import module {module_name}: {e}")
+
