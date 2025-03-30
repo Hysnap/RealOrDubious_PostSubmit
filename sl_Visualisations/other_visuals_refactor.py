@@ -1,7 +1,7 @@
 # PATH: sl_visualisations/other_visuals_refactor.py
 
 from sl_utils.logger import log_function_call, streamlit_logger
-from sl_visualisations.common_visual_functions import (
+from sl_utils.common_visual_functions import (
     get_dataset_or_error,
     apply_date_filter,
     plotly_weighted_scatter,

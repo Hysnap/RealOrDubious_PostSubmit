@@ -1,6 +1,6 @@
 # PATH: sl_visualisations/article_count_refactor.py
 from sl_utils.logger import log_function_call, streamlit_logger
-from sl_visualisations.common_visual_functions import (
+from sl_utils.common_visual_functions import (
     get_dataset_or_error,
     select_display_type,
     prepare_counts,

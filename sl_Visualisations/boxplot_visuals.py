@@ -4,7 +4,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from sl_utils.logger import log_function_call, streamlit_logger
-from sl_visualisations.common_visual_functions import (
+from sl_utils.common_visual_functions import (
     get_dataset_or_error,
     plot_violin
 )

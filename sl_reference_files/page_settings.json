@@ -164,13 +164,13 @@
   },
   "Data Preprocessing": {
     "required_elements": {
-      "T1C1V1": "sl_visualisations.polarity_refactor.plot_article_vs_title_polarity",
-      "T1C2V1": "sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity",
-      "T2C1V1": "sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity",
-      "T2C1V2": "sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity",
-      "T2C2V1": "sl_visualisations.polarity_refactor.plot_polarity_contrad_variations",
-      "T2C2V2": "sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations",
-      "T3C1V1": "sl_visualisations.boxplot_visuals.plot_polarity_subjectivity_boxplots"
+      "T1C1V1": "sl_utils.polarity_refactor.plot_article_vs_title_polarity",
+      "T1C2V1": "sl_utils.subjectivity_refactor.plot_article_vs_title_subjectivity",
+      "T2C1V1": "sl_utils.subjectivity_refactor.plot_title_subjectivity_vs_polarity",
+      "T2C1V2": "sl_utils.subjectivity_refactor.plot_article_subjectivity_vs_polarity",
+      "T2C2V1": "sl_utils.polarity_refactor.plot_polarity_contrad_variations",
+      "T2C2V2": "sl_utils.subjectivity_refactor.plot_subjectivity_contrad_variations",
+      "T3C1V1": "sl_utils.boxplot_visuals.plot_polarity_subjectivity_boxplots"
     },
     "page_settings": {
       "title": "Data PreProcessing",
@@ -197,7 +197,7 @@
         },
         "Lower_left": {
           "type": "visualization",
-          "content": "sl_visualisations.polarity_refactor.plot_article_vs_title_polarity"
+          "content": "sl_utils.polarity_refactor.plot_article_vs_title_polarity"
         },
         "Upper_right": {
           "type": "text",
@@ -205,7 +205,7 @@
         },
         "Lower_right": {
           "type": "visualization",
-          "content": "sl_visualisations.subjectivity_refactor.plot_article_vs_title_subjectivity"
+          "content": "sl_utils.subjectivity_refactor.plot_article_vs_title_subjectivity"
         }
       },
       "tab2": {
@@ -219,19 +219,19 @@
         },
         "Upper_left": {
           "type": "visualization",
-          "content": "sl_visualisations.subjectivity_refactor.plot_title_subjectivity_vs_polarity"
+          "content": "sl_utils.subjectivity_refactor.plot_title_subjectivity_vs_polarity"
         },
         "Lower_left": {
           "type": "visualization",
-          "content": "sl_visualisations.subjectivity_refactor.plot_article_subjectivity_vs_polarity"
+          "content": "sl_utils.subjectivity_refactor.plot_article_subjectivity_vs_polarity"
         },
         "Lower_right": {
           "type": "visualization",
-          "content": "sl_visualisations.polarity_refactor.plot_polarity_contrad_variations"
+          "content": "sl_utils.polarity_refactor.plot_polarity_contrad_variations"
         },
         "Upper_right": {
           "type": "visualization",
-          "content": "sl_visualisations.subjectivity_refactor.plot_subjectivity_contrad_variations"
+          "content": "sl_utils.subjectivity_refactor.plot_subjectivity_contrad_variations"
         }
       },
       "tab3": {
